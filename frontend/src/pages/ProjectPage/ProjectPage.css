@@ -1,0 +1,38 @@
+.card-container {
+    /* border: 1px solid red; */
+    width: 500px;
+    padding: 10px;
+
+      .card:hover{
+    border: 1px solid blue;
+    box-shadow: 1px 1px 1px 2px yellow;
+}
+    .card {
+        border: 1px solid white;
+        background-color: rgb(209, 209, 255);
+        display: grid;
+        grid-template-columns: auto auto;
+        width: 500px;
+        /* padding: 5px; */
+
+  
+
+        .image {
+            /* border: 1px solid; */
+            width: 200px;
+
+            img {
+                /* border: 1px solid; */
+                border-radius: 2%;
+                width: 100%;
+
+            }
+        }
+
+        .description {
+            /* border: 1px solid; */
+            width: 300px;
+
+        }
+    }
+}
