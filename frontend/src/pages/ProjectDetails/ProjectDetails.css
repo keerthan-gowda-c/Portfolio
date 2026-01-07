@@ -1,0 +1,43 @@
+.container{
+    /* padding: 10px; */
+    margin: 20px;
+    height: 300px;
+    object-fit: cover;
+    /* border: 1px solid rgb(192, 27, 27); */
+    box-shadow: 1px 1px 10px 2px rgb(143, 143, 143);
+    border-radius: 10px;
+    /* display:  grid;
+    grid-template-columns: auto auto; */
+
+    /* img{
+        object-fit: fill;
+    } */
+}
+h3{
+    border: 1px solid;
+    justify-content: center;
+    color: red;
+    margin-top: 50px;
+    padding: 10px;
+}
+.skill-container{
+    
+    height: 200px;
+    padding: 20px;
+    display: flex;
+    /* margin: auto; */
+    /* align-items: center; */
+    justify-content: center;
+    gap: 50px;
+        overflow: hidden;
+
+    
+
+    .card{
+        margin: auto;
+        padding: auto;
+        width: 200px;
+    justify-content: center;
+
+    }
+}

@@ -1,6 +1,6 @@
 import ProjectCard from './ProjectCard';
 // import './HomePage.css'
-import { projects } from '../../data/projects';
+import { projects_list } from '../../data/projects';
 
 
 
@@ -10,7 +10,7 @@ export default function ProjectPage() {
             
         <div className="container">
                     {
-                        projects.map((projects, index) => (
+                        projects_list.map((projects, index) => (
                             <ProjectCard projects={projects} />
                         ))
                     }

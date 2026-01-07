@@ -11,7 +11,7 @@ const ProjectCard = ({ projects }) => {
         </div>
         <div class="description col-md-8">
           <div class="card-body">
-            <Link >
+            <Link to={`/Projects/${projects.id}`} >
             <h5 class="card-title">{projects.title}</h5>
             </Link>
             <p class="card-text">{projects.description}</p>
