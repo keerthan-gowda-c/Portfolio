@@ -9,7 +9,7 @@ export const projects_list = [
     {
         id: 2,
         title: 'Chevy',
-        thumbnail: '//images/chevelle.jpg',
+        thumbnail: '/images/chevelle.jpg',
         description: 'This is Chevy chevelle'
 
     },

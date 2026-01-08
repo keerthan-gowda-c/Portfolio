@@ -37,15 +37,19 @@ function ProjectDetails() {
                 </h3>
                 <div className="skill-container row w-100 d-flex justify-content">
                     <div className="card col-6 text-center" >
+                        <img src="/images/html-logo.png" alt="" className="d-flex justify-content" width={"90px"}/>
                         HTML
                     </div>
                     <div className="card col-6 text-center" >
+                        <img src="/images/css-logo.png" alt="" width={"90px"} />
                         CSS
                     </div>
                     <div className="card col-6 text-center" >
+                        <img src="/images/JS-logo.png" alt="" width={"80px"}/>
                         JS
                     </div>
                     <div className="card col-6 text-center" >
+                        <img src="/images/react-logo.png" alt="" width={"90px"}/>
                         React JS
                     </div>
                 </div>

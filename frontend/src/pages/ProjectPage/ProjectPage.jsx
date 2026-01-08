@@ -8,7 +8,7 @@ export default function ProjectPage() {
     return (
         <>
             
-        <div className="container">
+        <div>
                     {
                         projects_list.map((projects, index) => (
                             <ProjectCard projects={projects} />

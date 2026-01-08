@@ -35,9 +35,15 @@ h3{
 
     .card{
         margin: auto;
-        padding: auto;
+        padding: 30px;
         width: 200px;
     justify-content: center;
+
+    img{
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
 
     }
 }
