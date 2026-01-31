@@ -1,0 +1,42 @@
+.about {
+    background-color: #30364F;
+    height: 150px;
+
+    p {
+        width: 1200px;
+        color: #F0F0DB;
+        padding: 20px;
+        justify-content: center;
+        font-size: large;
+        margin-left: 8%;
+    }
+}
+
+.bio-section {
+    background-color: #E1D9BC;
+    height: 523px;
+    color: #30364F;
+
+    h1 {
+        padding-top: 3%;
+        
+        margin-left: 9%;
+
+    }
+
+    .above-p {
+        font-size: large;
+
+        margin-left: 9%;
+    }
+
+    .bio-div {
+        font-size: 25px;
+        margin-top: 5%;
+        margin-left: 15%;
+        width: 80%;
+
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
