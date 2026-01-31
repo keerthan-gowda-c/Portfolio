@@ -1,6 +1,37 @@
-.container{
-    /* border: 1px solid; */
-    padding: 10px;
-    /* display: grid;
-    grid-template-columns: auto auto; */
+.hi{
+background-color: blanchedalmond;
+
+.home-page {
+    margin: auto;
+    /* padding-top: 50px; */
+    height: 673px;
+    width: 1450px;
+    
+
+    background-color: blanchedalmond;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: center;
+    border-radius: 15px;
+    
+
+    .text{
+        width: 85%;
+        /* align-content: end; */
+
+        h1 {
+        align-items: end;
+        width: 100%;
+        color:white;
+        text-shadow: 2px 2px 5px black;
+    }
+        h3{
+            border: none;
+        color: white;
+        text-shadow: 2px 2px 5px black;
+
+    }
 }
+}
+}
+
