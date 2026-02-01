@@ -1,14 +1,20 @@
 import './Skills.css';
-const Skills = ({skills}) => {
-    return(
+const Skills = ({ skills }) => {
+    return (
         <>
-        <div className='container'>
-        <label>{skills.title}</label>
-         <div className="progress" role="progressbar" aria-label={skills.title} aria-valuenow={skills.value} aria-valuemin="0" aria-valuemax="100">
-                <div className="progress-bar">{skills.value}</div>
+        <div>
+         <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col first">
+                    <div class="card">
+                        <img src={skills.img_src} class="card-img-top" alt="..." />
+                        <div class="card-body text-center">
+                            <h5 class="card-title">{skills.title}</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-       
+       </div>
+           
         </>
     )
 }

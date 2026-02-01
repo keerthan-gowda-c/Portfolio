@@ -1,16 +1,32 @@
-.container {
-    height: 100px;
 
-    .progress {
-        border: 1px solid;
-        height: 50%;
+section{
+    height:673px;
+    background-color: #30364F;
+    /* padding: 10px; */
 
-        padding: 5px;
+    
+}
+.first{
+    /* border: 1px solid; */
+    padding-top: 30px;
+    padding-left: 80px;
+    margin: auto;
+    width: 900px;
+    height: 300px;
 
-        .progress-bar{
-            width: 30%;
-            border-radius: 3px;
-        }
+}
+.card{
+    object-fit: cover;
+    background-color: #E1D9BC;
+    width: 180px;
+    height: 230px;
+    color:#30364F ;
 
+    h5{
+        text-shadow:2px 2px 2px #a7b6f1;
+    }
+
+    img{
+        height: 80%;
     }
 }

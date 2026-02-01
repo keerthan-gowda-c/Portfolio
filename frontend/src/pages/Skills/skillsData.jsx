@@ -2,11 +2,21 @@ export const skills_data = [
     {
         id:1,
         title:'HTML',
-        value:'100%'
+        img_src:"images/html-logo.png"
     },
     {
         id:2,
         title:'CSS',
-        value:'50%'
+        img_src:'images/css-logo.png'
+    },
+    {
+        id:3,
+        title:'JavaScript',
+        img_src:'images/JS-logo.png'
+    },
+    {
+        id:4,
+        title:'React',
+        img_src:'images/react-logo.png'
     }
 ]
