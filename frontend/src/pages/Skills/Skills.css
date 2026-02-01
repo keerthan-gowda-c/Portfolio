@@ -1,32 +1,37 @@
-
-section{
-    height:673px;
+.parent-section {
     background-color: #30364F;
-    /* padding: 10px; */
+    height: 697px;
 
+
+
+.skill-section {
+
+    width: 1533px;
+    background-color: #30364F;
     
-}
-.first{
-    /* border: 1px solid; */
-    padding-top: 30px;
-    padding-left: 80px;
-    margin: auto;
-    width: 900px;
-    height: 300px;
 
-}
-.card{
-    object-fit: cover;
-    background-color: #E1D9BC;
-    width: 180px;
-    height: 230px;
-    color:#30364F ;
-
-    h5{
-        text-shadow:2px 2px 2px #a7b6f1;
+    .first {
+        margin-left: 20%;
+        padding: 20px;
     }
 
-    img{
-        height: 80%;
+
+    .image-card {
+        border: none;
+        object-fit: cover;
+        background-color: #30364F;
+        width: 180px;
+        height: 230px;
+        color: #E1D9BC;
+
+        h5 {
+            /* text-shadow: 2px 2px 2px #ffa077; */
+            font-size: 25px;
+        }
+
+        img {
+            height: 80%;
+        }
     }
+}
 }
