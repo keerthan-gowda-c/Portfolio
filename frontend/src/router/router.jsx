@@ -33,7 +33,8 @@ const my_router = createBrowserRouter(
                 {
                     path:'/Skills',
                     element:<SkillPage/>
-                }
+                },
+                
 
                
             ]
