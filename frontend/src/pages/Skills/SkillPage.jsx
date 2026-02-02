@@ -10,7 +10,7 @@ export default function SkillPage() {
             <section className="parent-section">
 
                 <div>
-                    <section className="skill-section row row-cols-3 row-cols-md-4 first g-4">
+                    <section className="skill-section row row-cols-3 row-cols-md-4 g-4">
                     {
                         skills_data.map((skills, index) => (
                             <Skills skills={skills} />

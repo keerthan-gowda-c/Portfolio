@@ -9,13 +9,16 @@ export default function ProjectPage() {
     return (
         <>
          
-<section>
- <div className="row row-cols-3 row-cols-md-1 first g-4">
+<section className='parent-projectPage'>
+ <div >
+    <section className="project-section row row-cols-3 row-cols-md-4 first g-4">
+
                     {
                         projects_list.map((projects, index) => (
                             <ProjectCard projects={projects} />
                         ))
                     }
+    </section>
                 
             </div>
 </section>

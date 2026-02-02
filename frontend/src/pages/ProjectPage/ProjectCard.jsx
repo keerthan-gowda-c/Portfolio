@@ -6,7 +6,7 @@ const ProjectCard = ({ projects }) => {
     <>
    
 <div className='card-container row row-cols-1 row-cols-md-3 g-4'>
-        <div className="card row g-0">
+        <div className="card first row g-0">
           <div className="image col-md-4">
             <img src={projects.thumbnail} className="img-fluid rounded-start" alt="..." />
           </div>
