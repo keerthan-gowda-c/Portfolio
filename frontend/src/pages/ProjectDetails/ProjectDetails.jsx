@@ -26,7 +26,7 @@ function ProjectDetails() {
                     <div>
                         {project.description}
                     </div>
-                    <a href="">Click here for github link</a>
+                    
                 </div>
             </div>
 
