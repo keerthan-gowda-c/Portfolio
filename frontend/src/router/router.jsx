@@ -7,6 +7,7 @@ import App from '../App';
 import ProjectDetails from '../pages/ProjectDetails/ProjectDetails';
 
 import SkillPage from '../pages/Skills/SkillPage';
+import ContactPage from '../pages/ContactPage/ContactPage';
 
 const my_router = createBrowserRouter(
     [
@@ -34,7 +35,10 @@ const my_router = createBrowserRouter(
                     path:'/Skills',
                     element:<SkillPage/>
                 },
-                
+                {
+                    path:'/Contact',
+                    element:<ContactPage/>
+                }
 
                
             ]

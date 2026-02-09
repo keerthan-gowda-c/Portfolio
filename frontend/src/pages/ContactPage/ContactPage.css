@@ -1,0 +1,17 @@
+.full-area {
+        background-color: #30364F;
+        height: 673px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 150px;
+
+    
+        .left-area {
+    color:#E1D9BC;
+
+    }
+    .right-area{
+        color: #E1D9BC;
+    }
+}

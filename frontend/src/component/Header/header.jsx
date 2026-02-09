@@ -24,7 +24,9 @@ export default function Header(){
         <li className="nav-item">
           <NavLink to="/Projects" className="nav-link">Projects</NavLink>
         </li>
-        
+        <li className="nav-item">
+          <NavLink to="/Contact" className="nav-link">Contact</NavLink>
+        </li>
       </ul>
       
     </div>
