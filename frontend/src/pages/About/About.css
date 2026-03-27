@@ -39,4 +39,22 @@
         display: grid;
         grid-template-columns: auto auto;
     }
+    .resume{
+        /* border: 1px solid ; */
+        align-items: center;
+        
+
+        button{
+            background-color: #30364F;
+            padding: 10px;
+            border: 2px solid #F0F0DB;
+            border-radius:10px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
 }

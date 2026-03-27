@@ -21,6 +21,12 @@ export default function About() {
                     With hands-on experience in Python, Django/Flask, JavaScript, HTML, CSS, and database systems like MySQL and MongoDB,
                     <br />I enjoy building complete, scalable, and user-friendly web applications.
                 </p>
+                <div className='resume text-center'>
+                    <button>
+                    <a href="">Download Resume</a>
+                    </button>
+                        
+                    </div>
                 <div className='bio-div'>
                     <div className='bio-div-1'>
                         <p><b>Name: </b>Keerthan Gowda C</p>
@@ -33,7 +39,9 @@ export default function About() {
                         <p><b>E-mail: </b>ckgowda9741@gmail.com</p>
 
                     </div>
+                  
                 </div>
+                  
 
             </section>
         </>
