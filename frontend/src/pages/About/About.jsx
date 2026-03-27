@@ -21,20 +21,20 @@ export default function About() {
                     With hands-on experience in Python, Django/Flask, JavaScript, HTML, CSS, and database systems like MySQL and MongoDB,
                     <br />I enjoy building complete, scalable, and user-friendly web applications.
                 </p>
-                <div className='resume text-center'>
-                    <button>
-                    <a href="">Download Resume</a>
-                    </button>
+                <div className='resume'>
+                    
+                    <a href="https://drive.google.com/file/d/1QlAuEWpxkAVpRWDPJwZObyunV-Dmz8qN/view?usp=sharing" className='btn' target='_blank'>Download Resume</a>
+                    
                         
                     </div>
                 <div className='bio-div'>
                     <div className='bio-div-1'>
                         <p><b>Name: </b>Keerthan Gowda C</p>
                         <p><b>DOB: </b>28 November 2004</p>
-                        <p><b>City: </b>Banglore, Karnataka</p>
+                        <p><b>City: </b>Bangalore, Karnataka</p>
                     </div>
                     <div className='bio-div-2'>
-                        <p><b>Degree: </b>Bachelor's</p>
+                        <p><b>Degree: </b>Bachelor of Computer Application</p>
                         <p><b>Mobile No: </b>+91 9741738681</p>
                         <p><b>E-mail: </b>ckgowda9741@gmail.com</p>
 

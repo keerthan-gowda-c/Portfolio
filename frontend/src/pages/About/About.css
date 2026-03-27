@@ -19,7 +19,7 @@
 
     h1 {
         padding-top: 3%;
-        
+
         margin-left: 9%;
 
     }
@@ -39,22 +39,35 @@
         display: grid;
         grid-template-columns: auto auto;
     }
-    .resume{
-        /* border: 1px solid ; */
-        align-items: center;
-        
 
-        button{
+    .resume {
+        /* transform: translateY(20px); */
+        
+        position: absolute;
+        /* align-items: center; */
+        left: 45%;
+        top: 35%;
+
+
+        button {
             background-color: #30364F;
-            padding: 10px;
-            border: 2px solid #F0F0DB;
-            border-radius:10px;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* padding: 10px; */
+
+            border-radius: 10px;
+
 
         }
-        a{
+
+        a {
             text-decoration: none;
-            color: white;
+            color: #30364F;
+            border: 3px solid #30364F;
+            background-color: #E1D9BC;
+            /* border: 2px solid #F0F0DB; */
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a:hover{
+            box-shadow: 0px 0px 20px 2px #30364F;
         }
     }
 }
