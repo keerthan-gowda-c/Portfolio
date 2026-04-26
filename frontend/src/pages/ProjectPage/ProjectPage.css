@@ -1,53 +1,82 @@
-.parent-projectPage {
-    /* border: 1px solid; */
-    background-color: #30364F;
-    height: 697px;
-
-
-    .project-section {
-        width: 1533px;
-        background-color: #30364F;
-
-        .first {
-            margin-left: 20%;
-        }
-
-        .card-container {
-            width: 600px;
-            margin-left: 80px;
-            margin-top: 50px;
-
-
-            .card:hover {
-                box-shadow: 2px 1px 5px 1px #a7b6f1;
-            }
-
-            .card {
-                background-color: #E1D9BC;
-                display: grid;
-                grid-template-columns: auto auto;
-                width: 500px;
-                height: 200px;
-
-                .image {
-                    width: 200px;
-                    border-radius: 2%;
-                }
-
-                .description {
-                    width: 275px;
-                    border-radius: 2%;
-                    color: #30364F;
-
-                    small {
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-    }
+/* Project Page */
+.project-section {
+    background: transparent; /* use global background */
 }
 
-.card-links{
-    text-decoration: underline;
+/* Title */
+.section-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+/* Project Card */
+
+/* Card */
+.project-card {
+    border-radius: 16px;
+    overflow: hidden;
+    background: #bdd0fa; /* same tone as body */
+    transition: all 0.3s ease;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover = opposite feel (light card) */
+.project-card:hover {
+    transform: translateY(-8px);
+    background: #f8fafc; /* LIGHT = opposite of dark */
+    color: #0f172a;
+}
+
+/* Image */
+.project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/* Content */
+.project-content {
+    padding: 18px;
+}
+
+/* Title */
+.project-content h5 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Text */
+.project-content p{
+    font-size: 0.9rem;
+    /* color: #cbd5e1; */
+    transition: color 0.3s ease;
+}
+
+
+/* Change text color on hover */
+.project-card:hover .project-content p{
+    color: #143c73;
+    text-shadow: 0px 0px 2px rgb(64, 64, 120);
+}
+
+
+/* Links */
+.project-links {
+    margin-top: 10px;
+}
+
+.project-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: 500;
+    /* color: #00c6ff; */
+}
+
+/* Links on hover */
+.project-card:hover .project-links a {
+    color: #2563eb;
 }

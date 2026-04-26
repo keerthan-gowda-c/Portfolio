@@ -1,37 +1,34 @@
-.parent-section {
-    background-color: #30364F;
-    height: 697px;
+/* Card */
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
 
+    transition: all 0.3s ease;
 
-
-.skill-section {
-
-    width: 1533px;
-    background-color: #30364F;
-    
-
-    .first {
-        margin-left: 20%;
-        padding: 20px;
-    }
-
-
-    .image-card {
-        border: none;
-        object-fit: cover;
-        background-color: #30364F;
-        width: 180px;
-        height: 230px;
-        color: #E1D9BC;
-
-        h5 {
-            /* text-shadow: 2px 2px 2px #ffa077; */
-            font-size: 25px;
-        }
-
-        img {
-            height: 80%;
-        }
-    }
+    /* smooth shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
+
+/* Hover */
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Image */
+.skill-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.skill-title {
+    color: #e2e8f0;
+    font-size: 1rem;
+    margin-top: 10px;
 }

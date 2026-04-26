@@ -2,48 +2,64 @@ import './About.css';
 
 export default function About() {
     return (
-        <>
-            <section className='about'>
-                <div>
-                    <p >
-                        My name is Keerthan Gowda C, and I hold a Bachelor’s degree in Computer Applications (BCA).
-                        I’m passionate about technology, problem-solving, and building practical digital solutions.
-                        To strengthen my development skills, I also completed a Python Full Stack Development course,
-                        where I gained hands-on experience in front-end, back-end, and database technologies.
-                    </p>
-                </div>
-            </section>
-            <section className='bio-section'>
-                <h1>
-                    Python Full Stack Developer
-                </h1>
-                <p className='above-p'>
-                    With hands-on experience in Python, Django/Flask, JavaScript, HTML, CSS, and database systems like MySQL and MongoDB,
-                    <br />I enjoy building complete, scalable, and user-friendly web applications.
-                </p>
-                <div className='resume'>
-                    
-                    <a href="https://drive.google.com/file/d/1QlAuEWpxkAVpRWDPJwZObyunV-Dmz8qN/view?usp=sharing" className='btn' target='_blank'>Download Resume</a>
-                    
-                        
-                    </div>
-                <div className='bio-div'>
-                    <div className='bio-div-1'>
-                        <p><b>Name: </b>Keerthan Gowda C</p>
-                        <p><b>DOB: </b>28 November 2004</p>
-                        <p><b>City: </b>Bangalore, Karnataka</p>
-                    </div>
-                    <div className='bio-div-2'>
-                        <p><b>Degree: </b>Bachelor of Computer Application</p>
-                        <p><b>Mobile No: </b>+91 9741738681</p>
-                        <p><b>E-mail: </b>ckgowda9741@gmail.com</p>
+        <section className="about-section py-5">
+            <div className="container">
 
-                    </div>
-                  
-                </div>
-                  
+                <div className="row align-items-center">
 
-            </section>
-        </>
-    )
+                    {/* LEFT SIDE */}
+                    <div className="col-lg-6 mb-4 mb-lg-0">
+                        <h2 className="section-title">About Me</h2>
+
+                        <p className="about-text">
+                            My name is <b>Keerthan Gowda C</b>, and I hold a Bachelor’s degree in Computer Applications (BCA).
+                            I’m passionate about technology, problem-solving, and building practical digital solutions.
+                        </p>
+
+                        <p className="about-text">
+                            I completed a <b>Python Full Stack Development</b> course, gaining hands-on experience in
+                            front-end, back-end, and databases.
+                        </p>
+
+                        <h4 className="role mt-4">Python Full Stack Developer</h4>
+
+                        <p className="about-subtext">
+                            Skilled in Python, Django/Flask, JavaScript, HTML, CSS, MySQL, and MongoDB —
+                            building scalable and user-friendly applications.
+                        </p>
+
+                        <a 
+                            href="https://drive.google.com/file/d/1QlAuEWpxkAVpRWDPJwZObyunV-Dmz8qN/view?usp=sharing" 
+                            className="btn btn-primary mt-3"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Download Resume
+                        </a>
+                    </div>
+
+                    {/* RIGHT SIDE (BIO CARD) */}
+                    <div className="col-lg-6">
+                        <div className="bio-card">
+                            <div className="row">
+                                <div className="col-6">
+                                    <p><span>Name:</span> Keerthan Gowda C</p>
+                                    <p><span>DOB:</span> 28 Nov 2004</p>
+                                    <p><span>City:</span> Bangalore</p>
+                                </div>
+
+                                <div className="col-6">
+                                    <p><span>Degree:</span> BCA</p>
+                                    <p><span>Phone:</span> +91 9741738681</p>
+                                    <p><span>Email:</span> ckgowda9741@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    );
 }

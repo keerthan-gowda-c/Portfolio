@@ -1,35 +1,25 @@
 import ProjectCard from './ProjectCard';
-// import './HomePage.css'
 import { projects_list } from '../../data/projects';
-import './ProjectPage.css'
-
-
+import './ProjectPage.css';
 
 export default function ProjectPage() {
     return (
-        <>
-         
-<section className='parent-projectPage'>
- <div >
-    <section className="project-section row row-cols-3 row-cols-md-4 first g-4">
+        <section className="project-section container py-5">
 
-                    {
-                        projects_list.map((projects, index) => (
+            <h2 className="section-title text-center mb-5">
+                My Projects
+            </h2>
+
+            <div className="row g-4">
+                {
+                    projects_list.map((projects, index) => (
+                        <div className="col-12 col-md-6 col-lg-4" key={index}>
                             <ProjectCard projects={projects} />
-                        ))
-                    }
-    </section>
-                
+                        </div>
+                    ))
+                }
             </div>
-</section>
-             
-        
-      
-                
 
-
-
-
-        </>
+        </section>
     )
 }

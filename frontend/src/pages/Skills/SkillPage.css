@@ -1,0 +1,51 @@
+/* Section spacing */
+.parent-section {
+    background: transparent; /* keep global bg */
+}
+
+/* Title */
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Card styling */
+.skill-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    /* clean shadow */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Hover effect (subtle, premium) */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+/* Icon/Image */
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Skill name */
+.skill-card h5 {
+    color: #e2e8f0;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+/* Mobile fix */
+@media (max-width: 576px) {
+    .skill-card {
+        padding: 15px;
+    }
+}

@@ -1,57 +1,62 @@
-.name-section {
-    background-color: #30364F;
-    padding-top: 50px;
-    height: 150px;
-
-
-    .home-page {
-        margin: auto;
-
-
-
-        background-color: #30364F;
-        background-repeat: no-repeat;
-        background-size: cover;
-        object-fit: center;
-        border-radius: 15px;
-
-
-        .text {
-            width: 85%;
-
-            h1 {
-                align-items: end;
-                width: 95%;
-                color: #F0F0DB;
-                text-shadow: 2px 1px 1px rgb(148, 148, 119);
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            }
-
-        }
-    }
+.hero-section {
+    min-height: 100vh;
+ background: transparent;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
 }
 
-.img-section {
-    background-color: #E1D9BC;
-    /* border: 1px solid; */
-    height: 523px;
-    padding-top: 5px;
+/* Image */
+.profile-img {
+    max-width: 380px;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
 
-    p {
-        width: 80%;
-        color: #30364F;
-        /* text-shadow: 1px 1px 2px rgb(0, 0, 0); */
-        font-size: large;
-        font-weight: bold;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.profile-img:hover {
+    transform: scale(1.03);
+}
 
+/* Text */
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
 
+.name {
+    color: #00c6ff;
+}
+
+/* Subtitle */
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-top: 15px;
+    max-width: 500px;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #00c6ff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+.btn-outline-light {
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
     }
 
-    img {
-        transform: translate(60%, -35%);
-        border-radius: 50%;
-        box-shadow:5px 5px 20px 1px #a7b6f1;
+    .profile-img {
+        max-width: 280px;
     }
-
 }

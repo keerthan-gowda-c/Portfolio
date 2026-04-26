@@ -1,73 +1,68 @@
-.about {
-    background-color: #30364F;
-    height: 150px;
-
-    p {
-        width: 1200px;
-        color: #F0F0DB;
-        padding: 20px;
-        justify-content: center;
-        font-size: large;
-        margin-left: 8%;
-    }
+.about-section {
+     background: transparent;
+    padding: 80px 0;
+    color: #fff;
 }
 
-.bio-section {
-    background-color: #E1D9BC;
-    height: 523px;
-    color: #30364F;
+/* Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
-    h1 {
-        padding-top: 3%;
+/* Text */
+.about-text {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
 
-        margin-left: 9%;
+.about-subtext {
+    color: #94a3b8;
+    margin-top: 10px;
+}
 
+/* Role */
+.role {
+    color: #00c6ff;
+    font-weight: 600;
+}
+
+/* Bio Card */
+.bio-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Bio text */
+.bio-card p {
+    margin-bottom: 12px;
+    color: #e2e8f0;
+}
+
+.bio-card span {
+    color: #00c6ff;
+    font-weight: 600;
+}
+
+/* Button */
+.btn-primary {
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 25px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
     }
 
-    .above-p {
-        font-size: large;
-
-        margin-left: 9%;
-    }
-
-    .bio-div {
-        font-size: 25px;
-        margin-top: 5%;
-        margin-left: 15%;
-        width: 80%;
-
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-
-    .resume {
-        /* transform: translateY(20px); */
-        
-        position: absolute;
-        /* align-items: center; */
-        left: 45%;
-        top: 35%;
-
-
-        button {
-            background-color: #30364F;
-            /* padding: 10px; */
-
-            border-radius: 10px;
-
-
-        }
-
-        a {
-            text-decoration: none;
-            color: #30364F;
-            border: 3px solid #30364F;
-            background-color: #E1D9BC;
-            /* border: 2px solid #F0F0DB; */
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        a:hover{
-            box-shadow: 0px 0px 20px 2px #30364F;
-        }
+    .bio-card {
+        margin-top: 20px;
     }
 }

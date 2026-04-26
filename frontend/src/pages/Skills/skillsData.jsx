@@ -16,16 +16,11 @@ export const skills_data = [
     },
     {
         id:4,
-        title:'React',
-        img_src:'images/react-logo.png'
-    },
-    {
-        id:5,
         title:'SQL',
         img_src:'images/mysql_logo.png'
     },
     {
-        id:6,
+        id:5,
         title:'Python',
         img_src:'images/python_logo.png'
     },
