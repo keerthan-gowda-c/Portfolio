@@ -1,5 +1,5 @@
 import './HomePage.css';
-
+import { NavLink } from 'react-router-dom';
 function HomePage() {
     return (
         <section className="hero-section d-flex align-items-center">
@@ -8,9 +8,9 @@ function HomePage() {
 
                     {/* Image */}
                     <div className="col-lg-5 text-center mb-4 mb-lg-0">
-                        <img 
-                            src="images/ckg2.jpeg" 
-                            className="img-fluid profile-img" 
+                        <img
+                            src="images/ckg2.jpeg"
+                            className="img-fluid profile-img"
                             alt="Keerthan Gowda"
                         />
                     </div>
@@ -27,12 +27,19 @@ function HomePage() {
                         </p>
 
                         <div className="mt-4">
-                            <button className="btn btn-primary btn-lg me-3">
+
+                            <NavLink to="/Projects"><button className="btn btn-primary btn-lg me-3">
                                 View Projects
                             </button>
-                            <button className="btn btn-outline-light btn-lg">
-                                Contact Me
-                            </button>
+                            </NavLink>
+
+                            <NavLink to="/Contact">
+                                <button className="btn btn-outline-light btn-lg">
+                                    Contact Me
+                                </button>
+                            </NavLink>
+
+
                         </div>
                     </div>
 

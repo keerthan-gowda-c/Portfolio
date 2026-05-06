@@ -17,7 +17,7 @@ export default function ProjectCard({ projects }) {
                     <a href={projects.link} target="_blank" rel="noreferrer">
                         Live
                     </a>
-                    <a href={projects.github} target="_blank" rel="noreferrer">
+                    <a href={projects.github_link} target="_blank" rel="noreferrer">
                         Code
                     </a>
                 </div>

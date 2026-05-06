@@ -5,14 +5,14 @@ export const projects_list = [
         year:'March 2026 - Apr 2026',
         thumbnail:'/images/Logo.png',
         description:'Developed a E-commerce website',
-        github_link:'',
+        github_link:'https://github.com/keerthan-gowda-c/E-Com-Website.git',
 
     },
     {
         id: 2,
         title: 'Database Management System Project',
         year:'Dec 2025',
-        thumbnail: '',
+        thumbnail: '/images/database.jpg',
         description: 'Designed relational database schema',
 
     },
