@@ -9,7 +9,7 @@ function HomePage() {
                     {/* Image */}
                     <div className="col-lg-5 text-center mb-4 mb-lg-0">
                         <img
-                            src="images/ckg2.jpeg"
+                            src="images/profile_pic.png"
                             className="img-fluid profile-img"
                             alt="Keerthan Gowda"
                         />
