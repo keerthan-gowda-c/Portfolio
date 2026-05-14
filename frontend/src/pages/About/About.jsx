@@ -28,13 +28,8 @@ export default function About() {
                             building scalable and user-friendly applications.
                         </p>
 
-                        <a
-                            href="/Resume/Resume - Keerthan Gowda C.pdf"
-                            className="btn btn-primary mt-3"
-                            download="Keerthan_Gowda_Resume.pdf"
-                        >
-                            Download Resume
-                        </a>
+                        <a href="/Resume/Resume - Keerthan Gowda C.pdf" className="btn btn-primary mt-3" 
+                        download="Keerthan_Gowda_Resume.pdf">Download Resume</a>
                     </div>
 
                     {/* RIGHT SIDE (BIO CARD) */}

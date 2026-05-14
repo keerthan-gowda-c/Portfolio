@@ -3,7 +3,6 @@ export const projects_list = [
         id:1,
         title:'TurboToys Garage',
         year:'March 2026 - Apr 2026',
-        thumbnail:'/images/Logo.png',
         description:'Developed a E-commerce website',
         github_link:'https://github.com/keerthan-gowda-c/E-Com-Website.git',
 
@@ -12,15 +11,13 @@ export const projects_list = [
         id: 2,
         title: 'Database Management System Project',
         year:'Dec 2025',
-        thumbnail: '/images/database.jpg',
         description: 'Designed relational database schema',
 
     },
     {
         id: 3,
         title: 'Home Automation Security System',
-        year:'',
-        thumbnail: '/images/keyless-shield.png',
+        year:'March 2025',
         description: 'Operating a solenoid lock without using keys',
         github_link : 'https://github.com/keerthan-gowda-c/Home-Automation-Security-System',
 

@@ -1,16 +1,15 @@
-import './ContactPage.css';
-import { useState } from 'react';
+import "./ContactPage.css";
+import { useState } from "react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
 
-  // Handle input changes
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -18,34 +17,32 @@ export default function ContactPage() {
     });
   };
 
-  // Handle form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    setStatus('Sending...');
+    setStatus("Sending...");
 
     try {
-      const response = await fetch('https://formspree.io/f/mlgzpanb', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/mlgzpanb", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setStatus('Message sent successfully!');
+        setStatus("Message sent successfully!");
         setFormData({
-          name: '',
-          email: '',
-          message: '',
+          name: "",
+          email: "",
+          message: "",
         });
       } else {
-        setStatus('Failed to send message.');
+        setStatus("Failed to send message.");
       }
     } catch (error) {
-      setStatus('Something went wrong.');
+      setStatus("Something went wrong.");
     }
   };
 
@@ -60,7 +57,8 @@ export default function ContactPage() {
 
             <p className="contact-subtitle">
               I'm a passionate fresher looking for opportunities to start my
-              career in full stack development. Open to roles, internships, and collaborations.
+              career in full stack development. Open to roles, internships, and
+              collaborations.
             </p>
 
             <div className="contact-info mt-4">
@@ -75,51 +73,18 @@ export default function ContactPage() {
             <form className="contact-form" onSubmit={handleSubmit}>
 
               <div className="mb-3">
-                <label htmlFor="name" className="form-label">
-                  Your Name
-                </label>
-
-                <input
-                  type="text"
-                  className="form-control"
-                  id="name"
-                  placeholder="Enter your name"
-                  required
-                  value={formData.name}
-                  onChange={handleChange}
-                />
+                <label htmlFor="name" className="form-label">Your Name</label>
+                <input type="text" className="form-control" id="name" placeholder="Enter your name" required value={formData.name} onChange={handleChange} />
               </div>
 
               <div className="mb-3">
-                <label htmlFor="email" className="form-label">
-                  Email address
-                </label>
-
-                <input
-                  type="email"
-                  className="form-control"
-                  id="email"
-                  placeholder="name@example.com"
-                  required
-                  value={formData.email}
-                  onChange={handleChange}
-                />
+                <label htmlFor="email" className="form-label">Email address</label>
+                <input type="email" className="form-control" id="email" placeholder="name@example.com" required value={formData.email} onChange={handleChange} />
               </div>
 
               <div className="mb-3">
-                <label htmlFor="message" className="form-label">
-                  Message
-                </label>
-
-                <textarea
-                  className="form-control"
-                  id="message"
-                  rows="4"
-                  placeholder="Write your message..."
-                  required
-                  value={formData.message}
-                  onChange={handleChange}
-                ></textarea>
+                <label htmlFor="message" className="form-label">Message</label>
+                <textarea className="form-control" id="message" rows="4" placeholder="Write your message..." required value={formData.message} onChange={handleChange}></textarea>
               </div>
 
               <button type="submit" className="btn btn-primary w-100">

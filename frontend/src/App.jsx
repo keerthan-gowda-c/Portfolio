@@ -3,15 +3,23 @@ import './App.css'
 import Header from './component/Header/header';
 import HomePage from './pages/Home/Homepage';
 import { Outlet } from 'react-router-dom';
+import Footer from './component/Footer/footer';
 
 
 function App() {
   return (
     <>
-   <Header/>
+      <header>
+        <Header />
+      </header>
 
-   <Outlet/>
-   
+      <main>
+        <Outlet />
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </>
   )
 }

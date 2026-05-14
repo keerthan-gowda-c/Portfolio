@@ -1,5 +1,5 @@
 import Skills from "./Skills";
-import { skills_data } from "./skillsData";
+import { skills_data } from "../../data/skillsData";
 import './SkillPage.css'
 
 export default function SkillPage() {

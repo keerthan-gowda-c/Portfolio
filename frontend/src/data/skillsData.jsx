@@ -1,0 +1,37 @@
+export const skills_data = [
+    {
+        id:1,
+        title:'Django',
+        img_src:"thumbnail/django.png"
+    },
+    {
+        id:2,
+        title:'Python',
+        img_src:'thumbnail/python.png'
+    },
+    {
+        id:3,
+        title:'MySQL',
+        img_src:'thumbnail/mysql.png'
+    },
+    {
+        id:4,
+        title:'Reactjs',
+        img_src:'thumbnail/reactjs.png'
+    },
+    {
+        id:5,
+        title:'HTML',
+        img_src:'thumbnail/html.png'
+    },
+     {
+        id:6,
+        title:'CSS',
+        img_src:'thumbnail/css.png'
+    },
+     {
+        id:7,
+        title:'JavaScript',
+        img_src:'thumbnail/javascript.png'
+    },
+]
