@@ -29,7 +29,7 @@ export default function About() {
                         </p>
 
                         <a 
-                            href="https://drive.google.com/file/d/1QlAuEWpxkAVpRWDPJwZObyunV-Dmz8qN/view?usp=sharing" 
+                            href="public/Resume/Resume - Keerthan Gowda C.pdf" 
                             className="btn btn-primary mt-3"
                             target="_blank"
                             rel="noreferrer"
