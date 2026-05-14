@@ -28,11 +28,10 @@ export default function About() {
                             building scalable and user-friendly applications.
                         </p>
 
-                        <a 
-                            href="public/Resume/Resume - Keerthan Gowda C.pdf" 
+                        <a
+                            href="/Resume/Resume - Keerthan Gowda C.pdf"
                             className="btn btn-primary mt-3"
-                            target="_blank"
-                            rel="noreferrer"
+                            download="Keerthan_Gowda_Resume.pdf"
                         >
                             Download Resume
                         </a>
