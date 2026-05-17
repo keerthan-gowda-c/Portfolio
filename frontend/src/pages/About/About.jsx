@@ -29,7 +29,7 @@ export default function About() {
                         </p>
 
                         <a href="/Resume/Resume - Keerthan Gowda C.pdf" className="btn btn-primary mt-3" 
-                        download="Keerthan_Gowda_Resume.pdf">Download Resume</a>
+                        download="Python_full_stack.pdf">Download Resume</a>
                     </div>
 
                     {/* RIGHT SIDE (BIO CARD) */}
