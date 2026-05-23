@@ -6,9 +6,9 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-container">
-                <h3 className="footer-logo">Keerthan Gowda</h3>
+                <h3 className="footer-logo">Keerthan Gowda C</h3>
                 <p className="footer-text">
-                    Building modern web experiences with React.js 🚀
+                    Building modern full-stack web experiences with Django 🚀
                 </p>
 
                 <div className="footer-links">
@@ -20,7 +20,7 @@ function Footer() {
                 </div>
 
                 <p className="footer-copy">
-                    © {new Date().getFullYear()} Keerthan Gowda. All rights reserved.
+                    © {new Date().getFullYear()} Keerthan Gowda C. All rights reserved.
                 </p>
             </div>
         </footer>

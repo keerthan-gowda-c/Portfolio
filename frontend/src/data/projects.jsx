@@ -15,7 +15,14 @@ export const projects_list = [
 
     },
     {
-        id: 3,
+       id: 3,
+        title: 'Biryani Website',
+        year:'January 2025',
+        description: 'Designed a UI to show case my frontend knowledge',
+        github_link : 'https://github.com/keerthan-gowda-c/Biryani-website-frontend', 
+    },
+    {
+        id: 4,
         title: 'Home Automation Security System',
         year:'March 2025',
         description: 'Operating a solenoid lock without using keys',
