@@ -6,7 +6,7 @@ export default function Header(){
         <>
         <nav className="navbar navbar-expand-lg bg-body-tertiary navigation" data-bs-theme="dark">
   <div className="container-fluid navigation ">
-    <a className="navbar-brand" href="#">Portfolio</a>
+    <a className="navbar-brand" href="#">Keerthan</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
