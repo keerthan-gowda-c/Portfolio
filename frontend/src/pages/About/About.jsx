@@ -28,7 +28,7 @@ export default function About() {
                             building scalable and user-friendly applications.
                         </p>
 
-                        <a href="/Resume/Resume - Keerthan Gowda C.pdf" className="btn btn-primary mt-3" 
+                        <a href="/Resume/Python_full_stack.pdf" className="btn btn-primary mt-3" 
                         download="Python_full_stack.pdf">Download Resume</a>
                     </div>
 
