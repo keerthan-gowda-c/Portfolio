@@ -7,7 +7,7 @@ export default function SkillPage() {
         <section className="parent-section container py-5">
             
             <h1 className="section-title text-center mb-5">
-                Languages Known
+                Tech Stack
             </h1>
 
             <div className="row g-4 justify-content-center">

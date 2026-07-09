@@ -20,7 +20,7 @@ function HomePage() {
             </h1>
 
             <p className="hero-subtitle">
-              Developer & Designer crafting modern digital experiences.
+              Full-Stack Developer | Backend-Focused
             </p>
 
             <div className="mt-4">

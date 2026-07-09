@@ -15,7 +15,7 @@
 .project-card {
     border-radius: 16px;
     overflow: hidden;
-    background: #bdd0fa; /* same tone as body */
+    background: #d2daff; /* same tone as body */
     transition: all 0.3s ease;
     height: 100%;
     cursor: pointer;

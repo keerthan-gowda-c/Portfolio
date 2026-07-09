@@ -1,36 +1,47 @@
 export const skills_data = [
+
     {
         id:1,
-        title:'Django',
-        img_src:"thumbnail/django.png"
-    },
-    {
-        id:2,
         title:'Python',
         img_src:'thumbnail/python.png'
     },
     {
+        id:2,
+        title:'Django',
+        img_src:"thumbnail/django.png"
+    },
+    {
         id:3,
+        title:'FastAPI',
+        img_src:'thumbnail/fastapi.png'
+    },    
+    {
+        id:4,
         title:'MySQL',
         img_src:'thumbnail/mysql.png'
     },
     {
-        id:4,
+        id:5,
+        title:'PostgreSQL',
+        img_src:'thumbnail/postgresql.png'
+    },
+    {
+        id:6,
         title:'Reactjs',
         img_src:'thumbnail/reactjs.png'
     },
     {
-        id:5,
+        id:7,
         title:'HTML',
         img_src:'thumbnail/html.png'
     },
      {
-        id:6,
+        id:8,
         title:'CSS',
         img_src:'thumbnail/css.png'
     },
      {
-        id:7,
+        id:9,
         title:'JavaScript',
         img_src:'thumbnail/javascript.png'
     },

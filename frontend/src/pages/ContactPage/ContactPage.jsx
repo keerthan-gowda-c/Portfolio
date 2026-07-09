@@ -63,7 +63,7 @@ export default function ContactPage() {
 
             <div className="contact-info mt-4">
               <p>📞 +91 9741738681</p>
-              <p>📧 ckgowda9741@gmail.com</p>
+              <p>📧 <a href="mailto:ckgowda9741@gmail.com">ckgowda9741@gmail.com</a></p>
               <p>📍 Bengaluru, India</p>
             </div>
           </div>

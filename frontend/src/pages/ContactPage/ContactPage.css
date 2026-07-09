@@ -18,6 +18,11 @@
 .contact-info p {
     margin: 8px 0;
     color: #e2e8f0;
+
+    a{
+        text-decoration: none;
+        color: #e2e8f0;
+    }
 }
 
 /* Form card */

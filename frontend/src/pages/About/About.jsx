@@ -24,7 +24,7 @@ export default function About() {
                         <h4 className="role mt-4">Python Full Stack Developer</h4>
 
                         <p className="about-subtext">
-                            Skilled in Python, Django/Flask, JavaScript, HTML, CSS, MySQL, and MongoDB —
+                            Skilled in Python, Django/FastAPI, JavaScript, HTML, CSS, MySQL, and PostgreSQL —
                             building scalable and user-friendly applications.
                         </p>
 
@@ -42,10 +42,10 @@ export default function About() {
                                     <p><span>City:</span> Bangalore</p>
                                 </div>
 
-                                <div className="col-6">
+                                <div className="col-6 ">
                                     <p><span>Degree:</span> BCA</p>
                                     <p><span>Phone:</span> +91 9741738681</p>
-                                    <p><span>Email:</span> ckgowda9741@gmail.com</p>
+                                    <p><span>Email:</span> <a href="mailto:ckgowda9741@gmail.com">ckgowda9741@gmail.com</a></p>
                                 </div>
                             </div>
                         </div>

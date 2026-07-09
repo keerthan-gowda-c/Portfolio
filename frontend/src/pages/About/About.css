@@ -41,6 +41,11 @@
 .bio-card p {
     margin-bottom: 12px;
     color: #e2e8f0;
+
+    a{
+        text-decoration: none;
+        color: #e2e8f0;
+    }
 }
 
 .bio-card span {
