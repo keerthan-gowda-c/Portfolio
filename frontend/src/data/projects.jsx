@@ -8,6 +8,7 @@ export const projects_list = [
         a recruiter dashboard with hiring metrics, search and filtering, and database 
         schema migrations managed with Alembic.`,
         github_link: 'https://github.com/keerthan-gowda-c/Fastapi_Job_portal',
+        live:'https://jobhive-job-portal.vercel.app/'
 
     },
     {
@@ -18,7 +19,7 @@ export const projects_list = [
         implemented secure authentication with role-based access control and full CRUD 
         functionality, and delivered a responsive, intuitive user experience across devices.`,
         github_link: 'https://github.com/keerthan-gowda-c/E-Com-Website.git',
-
+        live:'https://e-comm-website-sgn4.onrender.com/'
     },
     {
         id: 3,
@@ -28,6 +29,7 @@ export const projects_list = [
         to showcase modern frontend development, component-based architecture, and 
         intuitive user interface design.`,
         github_link: 'https://github.com/keerthan-gowda-c/Biryani-website-frontend',
+        live:'https://react-e-commerce2.vercel.app/'
     },
 ]
 

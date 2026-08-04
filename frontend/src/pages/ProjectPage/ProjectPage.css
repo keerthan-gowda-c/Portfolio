@@ -15,7 +15,7 @@
 .project-card {
     border-radius: 16px;
     overflow: hidden;
-    background: #d2daff; /* same tone as body */
+    background-image:linear-gradient(135deg,rgb(254, 228, 137),rgb(255, 248, 197));
     transition: all 0.3s ease;
     height: 100%;
     cursor: pointer;
@@ -25,7 +25,8 @@
 /* Hover = opposite feel (light card) */
 .project-card:hover {
     transform: translateY(-8px);
-    background: #f8fafc; /* LIGHT = opposite of dark */
+    background-image:linear-gradient(135deg,#e5e5e5,#d9bffb); /* LIGHT = opposite of dark */
+    box-shadow: 0px 1px 5px 3px rgb(255,248,197);
     color: #0f172a;
 }
 
@@ -50,7 +51,6 @@
 /* Text */
 .project-content p{
     font-size: 0.9rem;
-    /* color: #cbd5e1; */
     transition: color 0.3s ease;
 }
 
@@ -71,10 +71,13 @@
     margin-right: 15px;
     text-decoration: none;
     font-weight: 500;
-    /* color: #00c6ff; */
+    color: black;
 }
 
 /* Links on hover */
-.project-card:hover .project-links a {
-    color: #2563eb;
+.project-card:hover .project-links{
+    a:hover{
+    color: #0066f5;
+    text-shadow: 0px 0px 1px rgb(64, 64, 120);
+    }
 }
