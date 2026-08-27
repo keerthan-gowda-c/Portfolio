@@ -6,6 +6,7 @@ import ProjectPage from "../pages/ProjectPage/ProjectPage";
 import App from '../App';
 import SkillPage from '../pages/Skills/SkillPage';
 import ContactPage from '../pages/ContactPage/ContactPage';
+import WorkExperience from '../pages/WorkExperience/WorkExperience';
 
 const my_router = createBrowserRouter(
     [
@@ -28,6 +29,10 @@ const my_router = createBrowserRouter(
                 {
                     path:'/Skills',
                     element:<SkillPage/>
+                },
+                {
+                    path:'/Work-Experience',
+                    element:<WorkExperience/>
                 },
                 {
                     path:'/Contact',

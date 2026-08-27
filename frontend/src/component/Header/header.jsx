@@ -22,6 +22,9 @@ export default function Header(){
           <NavLink to="/Skills" className="nav-link">Skills</NavLink>
         </li>
         <li className="nav-item">
+          <NavLink to="/Work-Experience" className="nav-link">Experience</NavLink>
+        </li>
+        <li className="nav-item">
           <NavLink to="/Projects" className="nav-link">Projects</NavLink>
         </li>
         <li className="nav-item">

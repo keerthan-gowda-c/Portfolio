@@ -15,7 +15,7 @@
 .project-card {
     border-radius: 16px;
     overflow: hidden;
-    background-image:linear-gradient(135deg,rgb(254, 228, 137),rgb(255, 248, 197));
+    background-image:linear-gradient(135deg,rgb(236, 239, 252),rgb(241, 241, 245));
     transition: all 0.3s ease;
     height: 100%;
     cursor: pointer;
