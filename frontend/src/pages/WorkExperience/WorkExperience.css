@@ -23,31 +23,37 @@
 
 
 .experience-card{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* Main Card */
 }
 
 .experience-card:hover{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* Main Card */
 }
 
 .experience-header{
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(192, 192, 192);
 }
 
 .office-logo{
     font-size: 2.5rem;
+    padding: 0;
     /* border: 1px solid; */
 }
 
 .experience-role{
     /* border: 1px solid; */
-
+justify-content: space-between;
     display: flex;
     align-items: center;
     margin: 5px;
 
+}
+
+.left-header{
+    /* border: 1px solid; */
+    display: flex;
 }
 .role-name{
     margin-top: 5px;
@@ -66,8 +72,9 @@
 }
 
 .dot{
-    transform: translateY(-1rem);
-    margin: 10px 10px 10px 10px;
+    transform: translateX(0.3rem);
+    margin-top: 14px;
+    margin-left: 10px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -87,5 +94,14 @@
 .experience-duration{
     /* border: 1px solid; */
     display: flex;
-    margin: 0 0 0 5px;
+    margin: 0 20px 0 20px;
+}
+
+.experience-responsibility h6{
+    /* border: 1px solid; */
+    margin: 10px 0 0 5px;
+}
+.experience-responsibility ul{
+    /* border: 1px solid; */
+    margin: 0px 0 0 5px;
 }
