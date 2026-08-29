@@ -1,83 +1,291 @@
-/* Project Page */
-.project-section {
-    background: transparent; /* use global background */
-}
+/* =========================
+   Project Section
+   ========================= */
 
-/* Title */
-.section-title {
-    font-size: 2.3rem;
-    font-weight: 700;
+.project-section {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 80px 20px;
+
+    background: transparent;
     color: #fff;
 }
 
 
-/* Card */
-.project-card {
-    border-radius: 16px;
-    overflow: hidden;
-    background-image:linear-gradient(135deg,rgb(236, 239, 252),rgb(241, 241, 245));
-    transition: all 0.3s ease;
-    height: 100%;
-    cursor: pointer;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+/* =========================
+   Container
+   ========================= */
+
+.project-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
 }
 
-/* Hover = opposite feel (light card) */
-.project-card:hover {
-    transform: translateY(-8px);
-    background-image:linear-gradient(135deg,#e5e5e5,#d9bffb); /* LIGHT = opposite of dark */
-    box-shadow: 0px 1px 5px 3px rgb(255,248,197);
+
+/* =========================
+   Section Title
+   ========================= */
+
+.section-title {
+    margin: 0 0 50px;
+
+    text-align: center;
+
+    font-size: 2.3rem;
+    font-weight: 700;
+
+    color: #fff;
+}
+
+
+/* =========================
+   Project Grid
+   ========================= */
+
+.project-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================
+   Project Item
+   ========================= */
+
+.project-item {
+    width: 100%;
+}
+
+
+/* =========================
+   Project Card
+   ========================= */
+
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    min-height: 250px;
+
+    display: flex;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    background: rgb(162, 209, 228);
+    color: #0f172a;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.3);
+
+    isolation: isolate;
+}
+
+/* Aniamted Gradient */
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: -100%;
+    z-index: -1;
+     background: linear-gradient(
+        130deg,
+        #94c0f6,
+        #ccdfe4,
+        #95e0f5,
+        #d4f2ff
+    );
+    transform: translate(-25%, -25%);
+    transition: transform 1.5s ease;
+   
+}
+
+/* Hover */
+.project-card:hover::before {
+    transform: translate(25%, 25%);
+}
+
+
+/* =========================
+   Content
+   ========================= */
+
+.project-content {
+    width: 100%;
+
+    padding: 22px;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   Project Title
+   ========================= */
+
+.project-content h5 {
+    margin: 0 0 10px;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
     color: #0f172a;
 }
 
-/* Image */
-.project-img {
-    width: 100%;
-    height: 200px;
-    object-fit: contain;
-}
 
-/* Content */
-.project-content {
-    padding: 18px;
-}
+/* =========================
+   Description
+   ========================= */
 
-/* Title */
-.project-content h5 {
-    margin-bottom: 10px;
-    font-weight: 600;
-}
+.project-content p {
+    margin: 0;
 
-/* Text */
-.project-content p{
+    color: #334155;
+
     font-size: 0.9rem;
-    transition: color 0.3s ease;
+
+    line-height: 1.6;
+
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
 }
 
 
-/* Change text color on hover */
-.project-card:hover .project-content p{
+/* Description Hover */
+
+.project-card:hover .project-content p {
     color: #143c73;
-    text-shadow: 0px 0px 2px rgb(64, 64, 120);
+
+    /* text-shadow: */
+    /* 0 0 2px rgb(64, 64, 120); */
 }
 
 
-/* Links */
+/* =========================
+   Links
+   ========================= */
+
 .project-links {
-    margin-top: 10px;
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: auto;
+    padding-top: 20px;
 }
 
 .project-links a {
-    margin-right: 15px;
+    display: inline-block;
+
+    color: #000;
+
     text-decoration: none;
-    font-weight: 500;
-    color: black;
+
+    font-weight: 600;
+
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease,
+        transform 0.3s ease;
 }
 
-/* Links on hover */
-.project-card:hover .project-links{
-    a:hover{
+
+/* Links Hover */
+
+.project-links a:hover {
     color: #0066f5;
-    text-shadow: 0px 0px 1px rgb(64, 64, 120);
+
+    text-shadow:
+        0 0 1px rgb(64, 64, 120);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 992px) {
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 25px;
     }
+
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .project-section {
+        padding: 70px 20px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+
+        margin-bottom: 40px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        max-width: 600px;
+
+        margin: 0 auto;
+    }
+
+}
+
+
+/* =========================
+   Small Mobile
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .project-section {
+        padding: 60px 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .project-content {
+        padding: 18px;
+    }
+
+    .project-content h5 {
+        font-size: 1.1rem;
+    }
+
+    .project-content p {
+        font-size: 0.88rem;
+    }
+
 }

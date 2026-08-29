@@ -1,107 +1,383 @@
+/* =========================
+   Experience Section
+   ========================= */
+
 .experience-section {
-    padding: 4rem;
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 80px 20px;
+
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+
+    color: white;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
 
+/* =========================
+   Section Title
+   ========================= */
 
-    h2 {
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: white;
-    }
+.experience-title {
+    text-align: center;
+
+    margin-bottom: 50px;
 }
+
+.experience-title h2 {
+    margin: 0;
+
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    color: white;
+}
+
+
+/* =========================
+   Card Container
+   ========================= */
 
 .card-container {
     width: 70%;
-}
+    max-width: 900px;
 
-
-.experience-card{
-    /* border: 1px solid red; */
-    /* Main Card */
-}
-
-.experience-card:hover{
-    /* border: 1px solid white; */
-    /* Main Card */
-}
-
-.experience-header{
-    border-bottom: 1px solid rgb(192, 192, 192);
-}
-
-.office-logo{
-    font-size: 2.5rem;
-    padding: 0;
-    /* border: 1px solid; */
-}
-
-.experience-role{
-    /* border: 1px solid; */
-justify-content: space-between;
-    display: flex;
-    align-items: center;
-    margin: 5px;
-
-}
-
-.left-header{
-    /* border: 1px solid; */
-    display: flex;
-}
-.role-name{
-    margin-top: 5px;
-    margin-left: 5px ;
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
+
+    gap: 25px;
 }
 
-.current-status{
-    /* border: 1px solid; */
+
+/* =========================
+   Experience Card
+   ========================= */
+
+.experience-card {
+    width: 100%;
+
+    padding: 25px;
+
+    background: rgba(255, 255, 255, 0.05);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 15px;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* =========================
+   Card Hover
+   ========================= */
+
+.experience-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(0, 198, 255, 0.3);
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   Experience Header
+   ========================= */
+
+.experience-header {
+    width: 100%;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+}
+
+
+/* =========================
+   Role Row
+   ========================= */
+
+.experience-role {
+    width: 100%;
 
     display: flex;
-    flex-direction: row;
+
+    align-items: center;
     justify-content: space-between;
+
+    gap: 20px;
 }
 
-.dot{
-    transform: translateX(0.3rem);
-    margin-top: 14px;
-    margin-left: 10px;
+
+/* =========================
+   Left Header
+   ========================= */
+
+.left-header {
+    display: flex;
+
+    align-items: center;
+
+    min-width: 0;
+}
+
+
+/* =========================
+   Office Icon
+   ========================= */
+
+.office-logo {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8rem;
+
+    flex-shrink: 0;
+
+    filter:
+        drop-shadow(0 0 5px rgba(0, 198, 255, 0.3));
+}
+
+
+/* =========================
+   Role Name
+   ========================= */
+
+.role-name {
+    display: flex;
+
+    flex-direction: column;
+
+    margin: 0 0 0 10px;
+
+    color: white;
+
+    font-size: 1.15rem;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   Company
+   ========================= */
+
+.experience-company {
+    margin-top: 3px;
+
+    color: #94a3b8;
+
+    font-size: 0.95rem;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   Current Status Dot
+   ========================= */
+
+.dot {
     width: 10px;
     height: 10px;
+
+    margin-left: 12px;
+
+    flex-shrink: 0;
+
     border-radius: 50%;
+
     background-color: rgb(10, 255, 10);
-    border: 1px;
-    border-style: unset;
-    border-color: black;
-    box-shadow: 0px 0px 5px 3px lightgreen;
+
+    box-shadow:
+        0 0 5px 3px rgba(144, 238, 144, 0.6);
 }
 
-.experience-company{
-    font-size: 1rem;
-    font-weight: 400;
 
-}
+/* =========================
+   Duration
+   ========================= */
 
-.experience-duration{
-    /* border: 1px solid; */
+.experience-duration {
     display: flex;
-    margin: 0 20px 0 20px;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #cbd5e1;
+
+    font-size: 0.9rem;
+
+    white-space: nowrap;
 }
 
-.experience-responsibility h6{
-    /* border: 1px solid; */
-    margin: 10px 0 0 5px;
+.duration-separator {
+    color: #64748b;
 }
-.experience-responsibility ul{
-    /* border: 1px solid; */
-    margin: 0px 0 0 5px;
+
+
+/* =========================
+   Responsibilities
+   ========================= */
+
+.experience-responsibility {
+    padding-top: 15px;
+}
+
+.responsibility-header {
+    margin: 0 0 10px;
+
+    color: #00c6ff;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+}
+
+.experience-responsibility ul {
+    margin: 0;
+
+    padding-left: 20px;
+
+    color: #cbd5e1;
+
+    line-height: 1.7;
+}
+
+.experience-responsibility li {
+    margin-bottom: 7px;
+}
+
+.experience-responsibility li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .card-container {
+        width: 85%;
+    }
+
+    .experience-role {
+        gap: 15px;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .experience-section {
+        padding: 70px 20px;
+    }
+
+    .experience-title {
+        margin-bottom: 35px;
+    }
+
+    .experience-title h2 {
+        font-size: 2rem;
+    }
+
+    .card-container {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .experience-card {
+        padding: 20px;
+    }
+
+    .experience-role {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .right-header {
+        width: 100%;
+    }
+
+    .experience-duration {
+        margin-left: 55px;
+    }
+
+}
+
+
+/* =========================
+   Small Mobile
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .experience-section {
+        padding: 60px 15px;
+    }
+
+    .experience-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .experience-card {
+        padding: 18px;
+    }
+
+    .office-logo {
+        width: 38px;
+        height: 38px;
+
+        font-size: 1.5rem;
+    }
+
+    .role-name {
+        font-size: 1rem;
+    }
+
+    .experience-company {
+        font-size: 0.85rem;
+    }
+
+    .experience-duration {
+        margin-left: 48px;
+
+        font-size: 0.8rem;
+    }
+
+    .experience-responsibility ul {
+        padding-left: 18px;
+
+        font-size: 0.9rem;
+    }
+
 }

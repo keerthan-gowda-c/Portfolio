@@ -4,25 +4,21 @@ import { experience } from "../../data/workExperice";
 
 export default function WorkExperience() {
     return (
-        <>
-            <section className="experience-section">
-                <div className="header">
-                    <h2>
-                        Work Experience
-                    </h2>
-                </div>
+        <section className="experience-section">
 
-                <div className="card-container">
-                    {
-                        experience.map((experiences, index) => (
-                            <div key={index}>
-                                <ExperienceCard experiences={experiences} />
-                            </div>
-                        ))
+            <div className="experience-title">
+                <h2>Work Experience</h2>
+            </div>
 
-                    }
-                </div>
-            </section>
-        </>
-    )
+            <div className="card-container">
+                {experience.map((experiences, index) => (
+                    <ExperienceCard
+                        key={index}
+                        experiences={experiences}
+                    />
+                ))}
+            </div>
+
+        </section>
+    );
 }

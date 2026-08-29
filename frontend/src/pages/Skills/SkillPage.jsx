@@ -1,25 +1,29 @@
 import Skills from "./Skills";
 import { skills_data } from "../../data/skillsData";
-import './SkillPage.css'
+import "./SkillPage.css";
 
 export default function SkillPage() {
     return (
-        <section className="parent-section container py-5">
-            
-            <h1 className="section-title text-center mb-5">
-                Tech Stack
-            </h1>
+        <section className="parent-section">
 
-            <div className="row g-4 justify-content-center">
-                {
-                    skills_data.map((skills, index) => (
-                        <div className="col-6 col-md-4 col-lg-3" key={index}>
-                            <Skills skills={skills} />
-                        </div>
-                    ))
-                }
+            <div className="skills-container">
+
+                <h1 className="section-title">
+                    Tech Stack
+                </h1>
+
+                <div className="skills-grid">
+                    {
+                        skills_data.map((skills, index) => (
+                            <div className="skill-item" key={index}>
+                                <Skills skills={skills} />
+                            </div>
+                        ))
+                    }
+                </div>
+
             </div>
 
         </section>
-    )
+    );
 }

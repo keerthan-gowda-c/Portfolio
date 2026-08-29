@@ -1,73 +1,328 @@
 .about-section {
-     background: transparent;
-    padding: 80px 0;
+    width: 100%;
+    min-height: 100vh;
+
+    background: transparent;
     color: #fff;
+
+    padding: 80px 20px;
+
+    display: flex;
+    align-items: center;
 }
 
-/* Title */
+
+/* =========================
+   Container
+   ========================= */
+
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Main Content
+   ========================= */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* =========================
+   Left Side
+   ========================= */
+
+.about-info {
+    width: 100%;
+}
+
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 20px;
+
+    margin: 0 0 20px;
 }
 
-/* Text */
 .about-text {
     color: #cbd5e1;
+
     line-height: 1.7;
+
+    margin: 0 0 15px;
+}
+
+.about-text b {
+    color: #fff;
 }
 
 .about-subtext {
     color: #94a3b8;
-    margin-top: 10px;
+
+    line-height: 1.7;
+
+    margin: 10px 0 0;
 }
 
-/* Role */
+
+/* =========================
+   Role
+   ========================= */
+
 .role {
     color: #00c6ff;
+
+    font-size: 1.25rem;
     font-weight: 600;
+
+    margin: 25px 0 0;
 }
 
-/* Bio Card */
+
+/* =========================
+   Resume Button
+   ========================= */
+
+.resume-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 25px;
+
+    padding: 11px 25px;
+
+    background: linear-gradient(
+        90deg,
+        #00c6ff,
+        #0072ff
+    );
+
+    color: #fff;
+
+    border: none;
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.resume-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 198, 255, 0.35);
+}
+
+
+/* =========================
+   Right Side
+   ========================= */
+
+.about-bio {
+    width: 100%;
+}
+
+
+/* =========================
+   Bio Card
+   ========================= */
+
 .bio-card {
+    width: 100%;
+
     background: rgba(255, 255, 255, 0.05);
-    padding: 25px;
+
+    padding: 30px;
+
     border-radius: 15px;
+
     backdrop-filter: blur(10px);
+
     border: 1px solid rgba(255, 255, 255, 0.1);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-/* Bio text */
+.bio-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(0, 198, 255, 0.3);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================
+   Bio Grid
+   ========================= */
+
+.bio-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.bio-column {
+    min-width: 0;
+}
+
+
+/* =========================
+   Bio Text
+   ========================= */
+
 .bio-card p {
-    margin-bottom: 12px;
+    margin: 0 0 18px;
+
     color: #e2e8f0;
 
-    a{
-        text-decoration: none;
-        color: #e2e8f0;
-    }
+    line-height: 1.6;
+
+    word-break: break-word;
+}
+
+.bio-card p:last-child {
+    margin-bottom: 0;
 }
 
 .bio-card span {
+    display: block;
+
     color: #00c6ff;
+
     font-weight: 600;
+
+    margin-bottom: 3px;
 }
 
-/* Button */
-.btn-primary {
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    border: none;
-    border-radius: 30px;
-    padding: 10px 25px;
+.bio-card a {
+    color: #e2e8f0;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
 }
 
-/* Mobile */
+.bio-card a:hover {
+    color: #00c6ff;
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .about-content {
+        gap: 40px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .bio-card {
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
 @media (max-width: 768px) {
+
+    .about-section {
+        min-height: auto;
+
+        padding: 70px 20px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .about-info {
+        text-align: center;
+    }
+
     .section-title {
         font-size: 2rem;
     }
 
-    .bio-card {
-        margin-top: 20px;
+    .about-bio {
+        width: 100%;
     }
+
+    .bio-card {
+        padding: 25px;
+    }
+
+}
+
+
+/* =========================
+   Small Mobile
+   ========================= */
+
+@media (max-width: 480px) {
+
+    .about-section {
+        padding: 60px 15px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .about-text,
+    .about-subtext {
+        font-size: 0.95rem;
+    }
+
+    .bio-grid {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+    .bio-column + .bio-column {
+        margin-top: 18px;
+    }
+
+    .resume-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
 }

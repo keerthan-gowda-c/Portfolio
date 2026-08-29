@@ -33,6 +33,7 @@ export default function ContactPage() {
 
       if (response.ok) {
         setStatus("Message sent successfully!");
+
         setFormData({
           name: "",
           email: "",
@@ -48,12 +49,16 @@ export default function ContactPage() {
 
   return (
     <section className="contact-section">
-      <div className="container">
-        <div className="row align-items-center">
+      <div className="contact-container">
+
+        <div className="contact-content">
 
           {/* LEFT SIDE */}
-          <div className="col-lg-5 mb-5 mb-lg-0 text-center text-lg-start">
-            <h2 className="contact-title">Let's Work Together</h2>
+          <div className="contact-info-section">
+
+            <h2 className="contact-title">
+              Let's Work Together
+            </h2>
 
             <p className="contact-subtitle">
               I'm a passionate fresher looking for opportunities to start my
@@ -61,41 +66,110 @@ export default function ContactPage() {
               collaborations.
             </p>
 
-            <div className="contact-info mt-4">
-              <p>📞 +91 9741738681</p>
-              <p>📧 <a href="mailto:ckgowda9741@gmail.com">ckgowda9741@gmail.com</a></p>
-              <p>📍 Bengaluru, India</p>
+            <div className="contact-info">
+
+              <p>
+                📞 <span>+91 9741738681</span>
+              </p>
+
+              <p>
+                📧{" "}
+                <a href="mailto:ckgowda9741@gmail.com">
+                  ckgowda9741@gmail.com
+                </a>
+              </p>
+
+              <p>
+                📍 <span>Bengaluru, India</span>
+              </p>
+
             </div>
+
           </div>
 
+
           {/* RIGHT SIDE */}
-          <div className="col-lg-7">
-            <form className="contact-form" onSubmit={handleSubmit}>
+          <div className="contact-form-section">
 
-              <div className="mb-3">
-                <label htmlFor="name" className="form-label">Your Name</label>
-                <input type="text" className="form-control" id="name" placeholder="Enter your name" required value={formData.name} onChange={handleChange} />
+            <form
+              className="contact-form"
+              onSubmit={handleSubmit}
+            >
+
+              <div className="form-group">
+
+                <label htmlFor="name">
+                  Your Name
+                </label>
+
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter your name"
+                  required
+                  value={formData.name}
+                  onChange={handleChange}
+                />
+
               </div>
 
-              <div className="mb-3">
-                <label htmlFor="email" className="form-label">Email address</label>
-                <input type="email" className="form-control" id="email" placeholder="name@example.com" required value={formData.email} onChange={handleChange} />
+
+              <div className="form-group">
+
+                <label htmlFor="email">
+                  Email Address
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="name@example.com"
+                  required
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+
               </div>
 
-              <div className="mb-3">
-                <label htmlFor="message" className="form-label">Message</label>
-                <textarea className="form-control" id="message" rows="4" placeholder="Write your message..." required value={formData.message} onChange={handleChange}></textarea>
+
+              <div className="form-group">
+
+                <label htmlFor="message">
+                  Message
+                </label>
+
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Write your message..."
+                  required
+                  value={formData.message}
+                  onChange={handleChange}
+                ></textarea>
+
               </div>
 
-              <button type="submit" className="btn btn-primary w-100">
+
+              <button
+                type="submit"
+                className="send-button"
+              >
                 Send Message
               </button>
 
-              {status && <p className="mt-3 text-center">{status}</p>}
+
+              {status && (
+                <p className="form-status">
+                  {status}
+                </p>
+              )}
+
             </form>
+
           </div>
 
         </div>
+
       </div>
     </section>
   );

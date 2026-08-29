@@ -4,22 +4,26 @@ import './ProjectPage.css';
 
 export default function ProjectPage() {
     return (
-        <section className="project-section container py-5">
+        <section className="project-section">
 
-            <h2 className="section-title text-center mb-5">
-                My Projects
-            </h2>
+            <div className="project-container">
 
-            <div className="row g-4">
-                {
-                    projects_list.map((projects, index) => (
-                        <div className="col-12 col-md-6 col-lg-4" key={index}>
-                            <ProjectCard projects={projects} />
-                        </div>
-                    ))
-                }
+                <h2 className="section-title">
+                    My Projects
+                </h2>
+
+                <div className="project-grid">
+                    {
+                        projects_list.map((projects, index) => (
+                            <div className="project-item" key={index}>
+                                <ProjectCard projects={projects} />
+                            </div>
+                        ))
+                    }
+                </div>
+
             </div>
 
         </section>
-    )
+    );
 }
