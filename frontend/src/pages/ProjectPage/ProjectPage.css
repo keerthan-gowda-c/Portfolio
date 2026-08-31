@@ -99,10 +99,10 @@
     z-index: -1;
      background: linear-gradient(
         130deg,
-        #94c0f6,
-        #ccdfe4,
-        #95e0f5,
-        #d4f2ff
+        #88b3e7,
+        #d7e6ea,
+        #a8e5f6,
+        #cddfe6
     );
     transform: translate(-25%, -25%);
     transition: transform 1.5s ease;
