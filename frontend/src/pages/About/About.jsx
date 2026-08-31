@@ -16,22 +16,24 @@ export default function About() {
 
                         <p className="about-text">
                             My name is <b>Keerthan Gowda C</b>, and I hold a Bachelor’s degree in Computer Applications (BCA).
-                            I’m passionate about technology, problem-solving, and building practical digital solutions.
+                            I’m passionate about software development, problem-solving, and building practical digital solutions.
                         </p>
 
                         <p className="about-text">
-                            I completed a <b>Python Full Stack Development</b> course, gaining hands-on experience in
-                            front-end, back-end, and databases.
+                            I have completed a <b>Python Full Stack Development</b> course and gained hands-on experience
+                            working with Python, Django, FastAPI, JavaScript, React.js, and databases.
                         </p>
 
                         <h4 className="role">
-                            Python Full Stack Developer
+                            Junior Software Intern
                         </h4>
 
                         <p className="about-subtext">
-                            Skilled in Python, Django/FastAPI, JavaScript, HTML, CSS, MySQL, and PostgreSQL —
-                            building scalable and user-friendly applications.
+                            Currently working as a Junior Software Intern, contributing to responsive web interfaces
+                            using React.js, JavaScript, HTML, and CSS. I’m particularly interested in backend development
+                            and building full-stack applications using Python, Django, FastAPI, and PostgreSQL.
                         </p>
+
 
                         <a
                             href="/Resume/Python_full_stack.pdf"

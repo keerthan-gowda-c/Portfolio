@@ -24,13 +24,13 @@ function HomePage() {
           </h1>
 
           <p className="hero-subtitle">
-            Full-Stack Developer | Backend-Focused
+            Full-Stack Developer
           </p>
 
           <div className="hero-buttons">
-            {/* <NavLink to="/Projects" className="project-btn">
+            <NavLink to="/Projects" className="project-btn">
               View Projects
-            </NavLink> */}
+            </NavLink>
 
             <NavLink to="/Contact" className="contact-btn">
               Contact Me

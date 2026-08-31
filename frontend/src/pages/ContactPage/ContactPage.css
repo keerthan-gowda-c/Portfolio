@@ -6,10 +6,10 @@
     width: 100%;
     min-height: 100vh;
 
-    padding: 80px 20px;
+    padding: 60px 20px;
 
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
 
     color: #fff;
 }
@@ -33,11 +33,7 @@
 
 .contact-content {
     display: grid;
-
     grid-template-columns: 0.8fr 1.2fr;
-
-    align-items: center;
-
     gap: 70px;
 }
 

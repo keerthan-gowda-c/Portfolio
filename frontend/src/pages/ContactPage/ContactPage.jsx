@@ -61,9 +61,10 @@ export default function ContactPage() {
             </h2>
 
             <p className="contact-subtitle">
-              I'm a passionate fresher looking for opportunities to start my
-              career in full stack development. Open to roles, internships, and
-              collaborations.
+              I’m currently working as a Junior Software Intern, gaining practical experience in 
+              software development and building responsive web interfaces. I’m focused on growing 
+              as a Full Stack Developer, with a strong interest in Python, Django, FastAPI, and 
+              backend development. Open to full-time opportunities, internships, and collaborations.
             </p>
 
             <div className="contact-info">
