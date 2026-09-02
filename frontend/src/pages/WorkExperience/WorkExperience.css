@@ -12,7 +12,7 @@
     flex-direction: column;
     align-items: center;
 
-    color: white;
+    color: var(--text-color);
 }
 
 
@@ -32,7 +32,7 @@
     font-size: 2.2rem;
     font-weight: 700;
 
-    color: white;
+    color: var(--text-color);
 }
 
 
@@ -60,16 +60,15 @@
 
     padding: 25px;
 
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--card-bg);
 
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--card-border);
 
     border-radius: 15px;
 
     backdrop-filter: blur(10px);
 
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--card-shadow);
 
     transition:
         transform 0.3s ease,
@@ -85,10 +84,9 @@
 .experience-card:hover {
     transform: translateY(-5px);
 
-    border-color: rgba(0, 198, 255, 0.3);
+    border-color: var(--accent-border);
 
-    box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.35);
+    box-shadow: var(--card-shadow-hover);
 }
 
 
@@ -101,7 +99,7 @@
 
     padding-bottom: 18px;
 
-    border-bottom: 1px solid rgba(192, 192, 192, 0.4);
+    border-bottom: 1px solid var(--divider-color);
 }
 
 
@@ -167,7 +165,7 @@
 
     margin: 0 0 0 10px;
 
-    color: white;
+    color: var(--text-color);
 
     font-size: 1.15rem;
     font-weight: 600;
@@ -183,7 +181,7 @@
 .experience-company {
     margin-top: 3px;
 
-    color: #94a3b8;
+    color: var(--secondary-text);
 
     font-size: 0.95rem;
 
@@ -223,7 +221,7 @@
 
     gap: 7px;
 
-    color: #cbd5e1;
+    color: var(--secondary-text);
 
     font-size: 0.9rem;
 
@@ -231,7 +229,7 @@
 }
 
 .duration-separator {
-    color: #64748b;
+    color: var(--muted-text);
 }
 
 
@@ -246,7 +244,7 @@
 .responsibility-header {
     margin: 0 0 10px;
 
-    color: #00c6ff;
+    color: var(--accent-color);
 
     font-size: 1rem;
 
@@ -258,7 +256,7 @@
 
     padding-left: 20px;
 
-    color: #cbd5e1;
+    color: var(--secondary-text);
 
     line-height: 1.7;
 }
@@ -285,7 +283,6 @@
     .experience-role {
         gap: 15px;
     }
-
 }
 
 
@@ -331,7 +328,6 @@
     .experience-duration {
         margin-left: 55px;
     }
-
 }
 
 
@@ -379,5 +375,4 @@
 
         font-size: 0.9rem;
     }
-
 }

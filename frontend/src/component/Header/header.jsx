@@ -2,7 +2,7 @@ import './header.css';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 
-export default function Header() {
+export default function Header({ lightMode, toggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const closeMenu = () => {
@@ -17,8 +17,10 @@ export default function Header() {
         <NavLink to="/" className="navbar-brand" onClick={closeMenu}>
           <h5>
             Keerthan
-            </h5>
+          </h5>
         </NavLink>
+
+       
 
         {/* Hamburger */}
         <button
@@ -35,6 +37,20 @@ export default function Header() {
         {/* Navigation Links */}
         <div className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
           <ul>
+            <li>
+               <div className="theme-toggle-wrapper">
+    <button
+        className={`theme-toggle ${lightMode ? "light" : "dark"}`}
+        onClick={toggleTheme}
+        aria-label="Toggle Theme"
+    >
+        <span className="toggle-icon">
+            {lightMode ? "☀️" : "🌙"}
+        </span>
+    </button>
+</div>
+            </li>
+
             <li>
               <NavLink to="/" end onClick={closeMenu}>
                 Home

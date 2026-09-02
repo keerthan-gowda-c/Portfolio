@@ -1,9 +1,13 @@
+/* =========================
+   Hero Section
+   ========================= */
+
 .hero-section {
     min-height: 100vh;
     width: 100%;
 
     background: transparent;
-    color: #fff;
+    color: var(--text-color);
 
     display: flex;
     align-items: center;
@@ -11,7 +15,10 @@
     padding: 50px 20px;
 }
 
-/* Main Container */
+
+/* =========================
+   Main Container
+   ========================= */
 
 .hero-container {
     width: 100%;
@@ -25,7 +32,10 @@
     gap: 60px;
 }
 
-/* Image Section */
+
+/* =========================
+   Image Section
+   ========================= */
 
 .hero-image {
     flex: 0 0 40%;
@@ -52,7 +62,10 @@
     transform: scale(1.03);
 }
 
-/* Content Section */
+
+/* =========================
+   Content Section
+   ========================= */
 
 .hero-content {
     flex: 1;
@@ -68,10 +81,12 @@
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
+
+    color: var(--text-color);
 }
 
 .name {
-    color: #00c6ff;
+    color: var(--accent-color);
 
     transition:
         color 0.3s ease,
@@ -82,11 +97,15 @@
     text-shadow: 0 3px 10px rgba(0, 198, 255, 0.6);
 }
 
-/* Subtitle */
+
+/* =========================
+   Subtitle
+   ========================= */
 
 .hero-subtitle {
     font-size: 1.2rem;
-    color: #cbd5e1;
+
+    color: var(--secondary-text);
 
     margin: 15px 0 0;
 
@@ -95,7 +114,10 @@
     line-height: 1.6;
 }
 
-/* Buttons */
+
+/* =========================
+   Buttons
+   ========================= */
 
 .hero-buttons {
     display: flex;
@@ -132,11 +154,14 @@
         color 0.3s ease;
 }
 
-/* Project Button */
+
+/* =========================
+   Project Button
+   ========================= */
 
 .project-btn {
-    background-color: #00c6ff;
-    color: #07111f;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
 }
 
 .project-btn:hover {
@@ -144,28 +169,33 @@
 
     box-shadow:
         0 8px 20px rgba(0, 198, 255, 0.35);
-
-    background-color: #19ceff;
+    color: var(--bg-color);
+    background-color: var(--accent-blue);
 }
 
-/* Contact Button */
+
+/* =========================
+   Contact Button
+   ========================= */
 
 .contact-btn {
     background: transparent;
-    color: #fff;
 
-    border: 1px solid #fff;
+    color: var(--text-color);
+
+    border: 1px solid var(--text-color);
 }
 
 .contact-btn:hover {
     transform: translateY(-3px);
 
-    background-color: #fff;
-    color: #111827;
+    background-color: var(--text-color);
+    color: var(--bg-color);
 
     box-shadow:
-        0 8px 20px rgba(255, 255, 255, 0.2);
+        0 8px 20px rgba(128, 128, 128, 0.2);
 }
+
 
 /* =========================
    Tablet

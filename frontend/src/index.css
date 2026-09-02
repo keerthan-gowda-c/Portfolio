@@ -1,12 +1,68 @@
-body {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+:root {
+    --bg-color: #0f172a;
+    --text-color: #ffffff;
+    --secondary-text: #94a3b8;
+    --navbar-bg: #172034;
+    --navbar-text: #d1d5db;
+
+    --accent-color: #00c6ff;
+    --accent-blue: #0072ff;
+
+    --border-color: rgba(255, 255, 255, 0.1);
+
+    --card-bg: rgba(255, 255, 255, 0.05);
+
+    /* Dark theme — deepen the same hues */
+    --card-gradient: linear-gradient(130deg, #baaffe, #b6faef, #c8efff, #b4d8e7);
+    --card-content-h5: #141313;
+    --card-content-p: #000000;
+    --card-links: #000;
+    --card-links-hover: #ffffff;
+}
+
+
+.light-mode {
+    --bg-color: #ffffff;
+    --text-color: #0f172a;
+    --secondary-text: #475569;
+    --navbar-bg: #f3f9ff;
+    --navbar-text: #1e293b;
+
+    --accent-color: #2989ff;
+    --accent-blue: #0056cc;
+
+    --border-color: rgba(15, 23, 42, 0.1);
+
+    --card-bg: rgba(15, 23, 42, 0.03);
+    /* Light theme */
+    --card-gradient: linear-gradient(130deg, #f4e6ff, #fdfcee, #e5f9ff, #d8e5ea);
+    --card-content-h5: #0f172a;
+    --card-content-p: #000000;
+    --card-links: #0056cc;
+    --card-links-border: #a9d0ff;
 }
 
 * {
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+
+}
+
+.app {
+    min-height: 100vh;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
