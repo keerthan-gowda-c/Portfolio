@@ -107,10 +107,3 @@ Contact information and links to my professional profiles.
 - **Email:** ckgowda9741@gmail.com
 
 ---
-
-## ⚙️ Run Locally
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/keerthan-gowda-c/Portfolio.git
