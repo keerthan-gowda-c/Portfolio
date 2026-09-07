@@ -1,5 +1,4 @@
 import {createBrowserRouter} from 'react-router-dom' 
-
 import About from "../pages/About/About";
 import HomePage from "../pages/Home/Homepage";
 import ProjectPage from "../pages/ProjectPage/ProjectPage";
@@ -7,7 +6,6 @@ import App from '../App';
 import SkillPage from '../pages/Skills/SkillPage';
 import ContactPage from '../pages/ContactPage/ContactPage';
 import WorkExperience from '../pages/WorkExperience/WorkExperience';
-
 const my_router = createBrowserRouter(
     [
         {
@@ -20,7 +18,6 @@ const my_router = createBrowserRouter(
                 {
                     path:'/About',
                     element:<About/>
-
                 },
                 {
                     path:'/Projects',
@@ -38,12 +35,8 @@ const my_router = createBrowserRouter(
                     path:'/Contact',
                     element:<ContactPage/>
                 }
-
-               
             ]
         }
     ]
-
 )
-
 export default my_router;

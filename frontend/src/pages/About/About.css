@@ -1,326 +1,195 @@
 .about-section {
     width: 100%;
     min-height: 100vh;
-
     background: transparent;
     color: var(--text-color);
     padding: 30px 20px;
 }
-
-
-/* =========================
-   Container
-   ========================= */
-
+   /* Container */
 .about-container {
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
 }
-
-
-/* =========================
-   Main Content
-   ========================= */
-
+   /* Main Content */
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     align-items: center;
-
     gap: 70px;
 }
-
-
-/* =========================
-   Left Side
-   ========================= */
-
+   /* Left Side */
 .about-info {
     width: 100%;
 }
-
 .section-title {
     font-size: 2.5rem;
     font-weight: 700;
-
     margin: 0 0 20px;
-
     color: var(--text-color);
 }
-
 .about-text {
     color: var(--secondary-text);
-
     line-height: 1.7;
-
     margin: 0 0 15px;
 }
-
 .about-text b {
     color: var(--text-color);
 }
-
 .about-subtext {
     color: var(--secondary-text);
-
     line-height: 1.7;
-
     margin: 10px 0 0;
 }
-
-
-/* =========================
-   Role
-   ========================= */
-
+/* Role */
 .role {
     color: var(--accent-color);
-
     font-size: 1.25rem;
     font-weight: 600;
-
     margin: 25px 0 0;
 }
-
-
-/* =========================
-   Resume Button
-   ========================= */
-
+/* Resume button */
 .resume-btn {
     display: inline-flex;
-
     align-items: center;
     justify-content: center;
-
     margin-top: 25px;
-
     padding: 11px 25px;
-
     background: linear-gradient(
         90deg,
         var(--accent-color),
         var(--accent-blue)
     );
-
     color: #fff;
-
     border: none;
     border-radius: 30px;
-
     text-decoration: none;
-
     font-size: 16px;
     font-weight: 600;
-
     cursor: pointer;
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
 }
-
 .resume-btn:hover {
     transform: translateY(-3px);
-
     box-shadow:
         0 8px 20px rgba(0, 198, 255, 0.35);
 }
-
-
-/* =========================
-   Right Side
-   ========================= */
-
+   /* Right Side */
 .about-bio {
     width: 100%;
 }
-
-
-/* =========================
-   Bio Card
-   ========================= */
-
+   /* Bio Card */
 .bio-card {
     width: 100%;
-
     background: var(--card-bg);
-
     padding: 30px;
-
     border-radius: 15px;
-
     backdrop-filter: blur(10px);
-
     border: 1px solid var(--border-color);
-
     transition:
         transform 0.3s ease,
         border-color 0.3s ease,
         box-shadow 0.3s ease;
 }
-
 .bio-card:hover {
     transform: translateY(-5px);
-
     border-color: rgba(0, 198, 255, 0.3);
-
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.2);
 }
-
-
-/* =========================
-   Bio Grid
-   ========================= */
-
+/*Bio Grid*/
 .bio-grid {
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 25px;
 }
-
 .bio-column {
     min-width: 0;
 }
-
-
-/* =========================
-   Bio Text
-   ========================= */
-
+/*Bio Text */
 .bio-card p {
     margin: 0 0 18px;
-
     color: var(--text-color);
-
     line-height: 1.6;
-
     word-break: break-word;
 }
-
 .bio-card p:last-child {
     margin-bottom: 0;
 }
-
 .bio-card span {
     display: block;
-
     color: var(--accent-color);
-
     font-weight: 600;
-
     margin-bottom: 3px;
 }
-
 .bio-card a {
     color: var(--text-color);
-
     text-decoration: none;
-
     transition: color 0.3s ease;
 }
-
 .bio-card a:hover {
     color: var(--accent-color);
 }
-
-
-/* =========================
-   Tablet
-   ========================= */
-
+/* Tablet */
 @media (max-width: 900px) {
-
     .about-content {
         gap: 40px;
     }
-
     .section-title {
         font-size: 2.2rem;
     }
-
     .bio-card {
         padding: 25px;
     }
-
 }
-
-
-/* =========================
-   Mobile
-   ========================= */
-
+/* Mobile*/
 @media (max-width: 768px) {
-
     .about-section {
         min-height: auto;
-
         padding: 70px 20px;
     }
-
     .about-content {
         grid-template-columns: 1fr;
-
         gap: 40px;
     }
-
     .about-info {
         text-align: center;
     }
-
     .section-title {
         font-size: 2rem;
     }
-
     .about-bio {
         width: 100%;
     }
-
     .bio-card {
         padding: 25px;
     }
-
 }
-
-
 /* =========================
    Small Mobile
    ========================= */
-
 @media (max-width: 480px) {
-
     .about-section {
         padding: 60px 15px;
     }
-
     .section-title {
         font-size: 1.8rem;
     }
-
     .about-text,
     .about-subtext {
         font-size: 0.95rem;
     }
-
     .bio-grid {
         grid-template-columns: 1fr;
-
         gap: 0;
     }
-
     .bio-column + .bio-column {
         margin-top: 18px;
     }
-
     .resume-btn {
         width: 100%;
         max-width: 250px;
     }
-
 }

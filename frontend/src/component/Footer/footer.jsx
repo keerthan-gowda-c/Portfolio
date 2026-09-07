@@ -8,7 +8,7 @@ function Footer() {
             <div className="footer-container">
                 <h3 className="footer-logo">Keerthan Gowda C</h3>
                 <p className="footer-text">
-                    Building modern full-stack web experiences with Django 🚀
+                    Building scalable, user-focused web applications with Python, FastAPI, Django & React, with hands-on industry experience.
                 </p>
 
                 <div className="footer-links">

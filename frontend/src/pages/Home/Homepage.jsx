@@ -24,7 +24,7 @@ function HomePage() {
           </h1>
 
           <p className="hero-subtitle">
-            Full-Stack Developer
+            Junior Software Intern at Chervic Advisory Services | Full-Stack Developer
           </p>
 
           <div className="hero-buttons">

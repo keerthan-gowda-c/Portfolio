@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 .navigation {
   width: 100%;
   background: var(--navbar-bg);
@@ -10,7 +9,6 @@
   /* box-shadow: 0 0 30px 20px rgb(8, 29, 81); */
   transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
-
 .navbar-container {
   /* max-width: 1200px; */
   height: 70px;
@@ -22,9 +20,7 @@
   align-items: center;
   justify-content: space-between;
 }
-
 /* Brand */
-
 .navbar-brand h5{
   color: var(--text-color);
   text-decoration: none;
@@ -35,238 +31,163 @@
   display: inline-block;
   transition: transform 0.5s ease-in-out, text-shadow 0.35s ease-in-out,letter-spacing 0.35s ease-in-out;
 }
-
 .navbar-brand h5:hover{
-  transform: scale(1.1);
+  transform: scale(1.001);
   letter-spacing: 1px;
  text-shadow: 0 3px 5px var(--accent-color);
 }
-
 /* Menu */
-
 .navbar-menu ul {
   display: flex;
   align-items: center;
   gap: 10px;
-
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .navbar-menu a {
   position: relative;
-
   display: block;
   padding: 10px 14px;
-
   color: var(--navbar-text);
   text-decoration: none;
-
   font-size: 15px;
   font-weight: 500;
-
   transition: color 0.3s ease;
 }
-
 .navbar-menu a:hover {
   color: var(--accent-color);
 }
-
 /* Active link */
-
 .navbar-menu a.active {
   color: var(--accent-color);
 }
-
 /* Active underline */
-
 .navbar-menu a::after {
   content: "";
-
   position: absolute;
   left: 14px;
   right: 14px;
   bottom: 3px;
-
   height: 2px;
-
   background:  var(--accent-color);
-
   transform: scaleX(0);
   transform-origin: center;
-
   transition: transform 0.3s ease;
 }
-
 .navbar-menu a.active::after {
   transform: scaleX(1);
 }
-
 /* Hamburger */
-
 .menu-toggle {
   display: none;
-
   width: 42px;
   height: 42px;
-
   padding: 8px;
-
   border: none;
   background: transparent;
-
   cursor: pointer;
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5px;
 }
-
 .menu-toggle span {
   width: 24px;
   height: 2px;
-
   background: var(--text-color);
-
   transition: all 0.3s ease;
 }
-
 /* Hamburger animation */
-
 .menu-toggle.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
-
 .menu-toggle.open span:nth-child(2) {
   opacity: 0;
 }
-
 .menu-toggle.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
-
-
 .theme-toggle {
     width: 52px;
     height: 28px;
-
     padding: 3px;
-
     border: 1px solid #475569;
     border-radius: 30px;
-
     background: #111827;
-
     display: flex;
     align-items: center;
-
     cursor: pointer;
-
     transition: background-color 0.3s ease;
 }
-
 .toggle-icon {
     width: 20px;
     height: 20px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 50%;
-
     background: #ffffff;
-
     font-size: 12px;
-
     transform: translateX(0);
-
     transition: transform 0.3s ease;
 }
-
 /* Light mode */
-
 .theme-toggle.light {
     background: #ccd1d7;
     border-color: #b6bdc7;
 }
-
 .theme-toggle.light .toggle-icon {
     transform: translateX(22px);
 }
-
 /* Dark mode */
-
 .theme-toggle.dark {
     background: #111827;
     border-color: #475569;
 }
-
 .theme-toggle.dark .toggle-icon {
     transform: translateX(0);
 }
-
 /* Hover */
-
 .theme-toggle:hover {
     box-shadow: 0 0 8px rgba(0, 198, 255, 0.35);
 }
-
 /* Mobile */
-
 @media (max-width: 768px) {
-
   .navbar-container {
     height: 65px;
     padding: 0 20px;
   }
-
   .menu-toggle {
     display: flex;
   }
-
   .navbar-menu {
     position: absolute;
-
     top: 65px;
     left: 0;
-
     width: 100%;
-
     background: var(--navbar-bg);
-
     border-top: 1px solid var(--border-color);
-
     max-height: 0;
     overflow: hidden;
-
     transition: max-height 0.35s ease;
   }
-
   .navbar-menu.open {
     max-height: 500px;
   }
-
   .navbar-menu ul {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-
     gap: 0;
-
     padding: 10px 20px 15px;
   }
-
   .navbar-menu li {
     width: 100%;
   }
-
   .navbar-menu a {
     padding: 14px 10px;
   }
-
   .navbar-menu a::after {
     left: 10px;
     right: auto;

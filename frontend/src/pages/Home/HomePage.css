@@ -1,308 +1,209 @@
 /* =========================
    Hero Section
    ========================= */
-
 .hero-section {
     min-height: 100vh;
     width: 100%;
-
     background: transparent;
     color: var(--text-color);
-
     display: flex;
     align-items: center;
-
     padding: 50px 20px;
 }
-
-
 /* =========================
    Main Container
    ========================= */
-
 .hero-container {
     width: 100%;
     max-width: 1200px;
-
     margin: 0 auto;
-
     display: flex;
     align-items: center;
-
     gap: 60px;
 }
-
-
 /* =========================
    Image Section
    ========================= */
-
 .hero-image {
     flex: 0 0 40%;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .profile-img {
     width: 100%;
     max-width: 380px;
-
     display: block;
-
     border-radius: 20px;
-
     transition:
         transform 0.4s ease,
         box-shadow 0.4s ease;
 }
-
 .profile-img:hover {
     transform: scale(1.03);
 }
-
-
 /* =========================
    Content Section
    ========================= */
-
 .hero-content {
     flex: 1;
-
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
 .hero-title {
     margin: 0;
-
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.2;
-
     color: var(--text-color);
 }
-
 .name {
     color: var(--accent-color);
-
     transition:
         color 0.3s ease,
         text-shadow 0.3s ease;
 }
-
 .name:hover {
     text-shadow: 0 3px 10px rgba(0, 198, 255, 0.6);
 }
-
-
 /* =========================
    Subtitle
    ========================= */
-
 .hero-subtitle {
     font-size: 1.2rem;
-
     color: var(--secondary-text);
-
     margin: 15px 0 0;
-
-    max-width: 500px;
-
     line-height: 1.6;
 }
-
-
 /* =========================
    Buttons
    ========================= */
-
 .hero-buttons {
     display: flex;
     align-items: center;
-
     gap: 15px;
-
     margin-top: 30px;
 }
-
 .project-btn,
 .contact-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-
     min-width: 150px;
-
     padding: 11px 25px;
-
     border-radius: 30px;
-
     font-size: 16px;
     font-weight: 600;
-
     text-decoration: none;
-
     cursor: pointer;
-
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease,
         background-color 0.3s ease,
         color 0.3s ease;
 }
-
-
 /* =========================
    Project Button
    ========================= */
-
 .project-btn {
     background-color: var(--accent-color);
     color: var(--bg-color);
 }
-
 .project-btn:hover {
     transform: translateY(-3px);
-
     box-shadow:
         0 8px 20px rgba(0, 198, 255, 0.35);
     color: var(--bg-color);
     background-color: var(--accent-blue);
 }
-
-
 /* =========================
    Contact Button
    ========================= */
-
 .contact-btn {
     background: transparent;
-
     color: var(--text-color);
-
     border: 1px solid var(--text-color);
 }
-
 .contact-btn:hover {
     transform: translateY(-3px);
-
     background-color: var(--text-color);
     color: var(--bg-color);
-
     box-shadow:
         0 8px 20px rgba(128, 128, 128, 0.2);
 }
-
-
 /* =========================
    Tablet
    ========================= */
-
 @media (max-width: 900px) {
-
     .hero-container {
         gap: 40px;
     }
-
     .hero-title {
         font-size: 2.6rem;
     }
-
     .profile-img {
         max-width: 320px;
     }
 }
-
-
 /* =========================
    Mobile
    ========================= */
-
 @media (max-width: 768px) {
-
     .hero-section {
         min-height: auto;
-
         padding: 80px 20px;
     }
-
     .hero-container {
         flex-direction: column;
-
         gap: 40px;
-
         text-align: center;
     }
-
     .hero-image {
         flex: none;
-
         width: 100%;
     }
-
     .profile-img {
         max-width: 280px;
     }
-
     .hero-content {
         width: 100%;
-
         align-items: center;
     }
-
     .hero-title {
         font-size: 2.2rem;
     }
-
     .hero-subtitle {
         font-size: 1.05rem;
-
         max-width: 450px;
     }
-
     .hero-buttons {
         justify-content: center;
-
         flex-wrap: wrap;
-
         margin-top: 25px;
     }
 }
-
-
 /* =========================
    Small Mobile
    ========================= */
-
 @media (max-width: 480px) {
-
     .hero-section {
         padding: 60px 15px;
     }
-
     .profile-img {
         max-width: 240px;
     }
-
     .hero-title {
         font-size: 1.9rem;
     }
-
     .hero-subtitle {
         font-size: 1rem;
     }
-
     .hero-buttons {
         width: 100%;
-
         flex-direction: column;
-
         gap: 12px;
     }
-
     .project-btn,
     .contact-btn {
         width: 100%;
