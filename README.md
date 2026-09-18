@@ -86,7 +86,7 @@ Contact information and links to my professional profiles.
 
 **Mandya University, Mandya**
 
-**CGPA: 8.15 / 10**
+**CGPA: 8.09 / 10**
 
 ---
 
