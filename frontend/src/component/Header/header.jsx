@@ -20,7 +20,7 @@ export default function Header({ lightMode, toggleTheme }) {
           </h5>
         </NavLink>
 
-       
+
 
         {/* Hamburger */}
         <button
@@ -38,17 +38,17 @@ export default function Header({ lightMode, toggleTheme }) {
         <div className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
           <ul>
             <li>
-               <div className="theme-toggle-wrapper">
-    <button
-        className={`theme-toggle ${lightMode ? "light" : "dark"}`}
-        onClick={toggleTheme}
-        aria-label="Toggle Theme"
-    >
-        <span className="toggle-icon">
-            {lightMode ? "☀️" : "🌙"}
-        </span>
-    </button>
-</div>
+              <div className="theme-toggle-wrapper">
+                <button
+                  className={`theme-toggle ${lightMode ? "light" : "dark"}`}
+                  onClick={toggleTheme}
+                  aria-label="Toggle Theme"
+                >
+                  <span className="toggle-icon">
+                    {lightMode ? "☀️" : "🌙"}
+                  </span>
+                </button>
+              </div>
             </li>
 
             <li>
@@ -66,6 +66,12 @@ export default function Header({ lightMode, toggleTheme }) {
             <li>
               <NavLink to="/Skills" onClick={closeMenu}>
                 Skills
+              </NavLink>
+            </li>
+
+            <li>
+              <NavLink to="/Certificates" onClick={closeMenu}>
+                Certificates
               </NavLink>
             </li>
 

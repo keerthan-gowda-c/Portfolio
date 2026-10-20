@@ -1,6 +1,4 @@
-/* =========================
-   Experience Section
-   ========================= */
+/*experience section*/
 .experience-section {
     width: 100%;
     min-height: 100vh;
@@ -10,9 +8,7 @@
     align-items: center;
     color: var(--text-color);
 }
-/* =========================
-   Section Title
-   ========================= */
+/*section title*/
 .experience-title {
     text-align: center;
     margin-bottom: 50px;
@@ -23,9 +19,7 @@
     font-weight: 700;
     color: var(--text-color);
 }
-/* =========================
-   Card Container
-   ========================= */
+/*card container*/
 .card-container {
     width: 70%;
     max-width: 900px;
@@ -33,9 +27,7 @@
     flex-direction: column;
     gap: 25px;
 }
-/* =========================
-   Experience Card
-   ========================= */
+/*experience card*/
 .experience-card {
     width: 100%;
     padding: 25px;
@@ -44,30 +36,21 @@
     border-radius: 15px;
     backdrop-filter: blur(10px);
     box-shadow: var(--card-shadow);
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-/* =========================
-   Card Hover
-   ========================= */
+/*card hover*/
 .experience-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-border);
     box-shadow: var(--card-shadow-hover);
 }
-/* =========================
-   Experience Header
-   ========================= */
+/*experience header*/
 .experience-header {
     width: 100%;
     padding-bottom: 18px;
     border-bottom: 1px solid var(--divider-color);
 }
-/* =========================
-   Role Row
-   ========================= */
+/*role row*/
 .experience-role {
     width: 100%;
     display: flex;
@@ -75,17 +58,13 @@
     justify-content: space-between;
     gap: 20px;
 }
-/* =========================
-   Left Header
-   ========================= */
+/*left header*/
 .left-header {
     display: flex;
     align-items: center;
     min-width: 0;
 }
-/* =========================
-   Office Icon
-   ========================= */
+/*office icon*/
 .office-logo {
     width: 45px;
     height: 45px;
@@ -94,12 +73,9 @@
     justify-content: center;
     font-size: 1.8rem;
     flex-shrink: 0;
-    filter:
-        drop-shadow(0 0 5px rgba(0, 198, 255, 0.3));
+    filter: drop-shadow(0 0 5px rgba(0, 198, 255, 0.3));
 }
-/* =========================
-   Role Name
-   ========================= */
+/*role name*/
 .role-name {
     display: flex;
     flex-direction: column;
@@ -109,18 +85,14 @@
     font-weight: 600;
     line-height: 1.4;
 }
-/* =========================
-   Company
-   ========================= */
+/*company*/
 .experience-company {
     margin-top: 3px;
     color: var(--secondary-text);
     font-size: 0.95rem;
     font-weight: 400;
 }
-/* =========================
-   Current Status Dot
-   ========================= */
+/*current status dot*/
 .dot {
     width: 10px;
     height: 10px;
@@ -128,12 +100,9 @@
     flex-shrink: 0;
     border-radius: 50%;
     background-color: rgb(10, 255, 10);
-    box-shadow:
-        0 0 5px 3px rgba(144, 238, 144, 0.6);
+    box-shadow: 0 0 5px 3px rgba(144, 238, 144, 0.6);
 }
-/* =========================
-   Duration
-   ========================= */
+/*duration*/
 .experience-duration {
     display: flex;
     align-items: center;
@@ -145,9 +114,7 @@
 .duration-separator {
     color: var(--muted-text);
 }
-/* =========================
-   Responsibilities
-   ========================= */
+/*responsibilities*/
 .experience-responsibility {
     padding-top: 15px;
 }
@@ -169,9 +136,7 @@
 .experience-responsibility li:last-child {
     margin-bottom: 0;
 }
-/* =========================
-   Tablet
-   ========================= */
+/*tablet*/
 @media (max-width: 900px) {
     .card-container {
         width: 85%;
@@ -180,9 +145,7 @@
         gap: 15px;
     }
 }
-/* =========================
-   Mobile
-   ========================= */
+/*mobile*/
 @media (max-width: 768px) {
     .experience-section {
         padding: 70px 20px;
@@ -212,9 +175,7 @@
         margin-left: 55px;
     }
 }
-/* =========================
-   Small Mobile
-   ========================= */
+/*small mobile*/
 @media (max-width: 480px) {
     .experience-section {
         padding: 60px 15px;

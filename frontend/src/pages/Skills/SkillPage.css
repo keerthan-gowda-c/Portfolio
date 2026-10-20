@@ -1,6 +1,4 @@
-/* =========================
-   Section
-   ========================= */
+/*section*/
 .parent-section {
     width: 100%;
     min-height: 100vh;
@@ -8,17 +6,13 @@
     padding: 30px 20px;
     color: var(--text-color);
 }
-/* =========================
-   Container
-   ========================= */
+/*container*/
 .skills-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
-/* =========================
-   Title
-   ========================= */
+/*section title*/
 .section-title {
     text-align: center;
     font-size: 2.2rem;
@@ -26,24 +20,18 @@
     color: var(--text-color);
     margin: 0 0 50px;
 }
-/* =========================
-   Skills Grid
-   ========================= */
+/*skills grid*/
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     justify-items: stretch;
 }
-/* =========================
-   Skill Item
-   ========================= */
+/*skill item*/
 .skill-item {
     width: 100%;
 }
-/* =========================
-   Skill Card
-   ========================= */
+/*skill card*/
 .skill-card {
     width: 100%;
     height: 100%;
@@ -57,59 +45,44 @@
     border-radius: 15px;
     text-align: center;
     box-shadow: var(--card-shadow);
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        border-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
-/* =========================
-   Hover
-   ========================= */
+/*hover*/
 .skill-card:hover {
     transform: translateY(-6px);
     border-color: var(--accent-border);
     box-shadow: var(--card-shadow-hover);
 }
-/* =========================
-   Image
-   ========================= */
+/*skill image*/
 .skill-img {
     width: 60px;
     height: 60px;
     object-fit: contain;
     margin-bottom: 10px;
-    transition:
-        transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 .skill-card:hover .skill-img {
     transform: scale(1.1);
 }
-/* =========================
-   Skill Title
-   ========================= */
+/*skill title*/
 .skill-title {
     margin: 10px 0 0;
     color: var(--card-text);
     font-size: 1rem;
     font-weight: 600;
-    transition:
-        color 0.3s ease;
+    transition: color 0.3s ease;
 }
 .skill-card:hover .skill-title {
     color: var(--accent-color);
 }
-/* =========================
-   Tablet
-   ========================= */
+/*tablet*/
 @media (max-width: 992px) {
     .skills-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 }
-/* =========================
-   Small Tablet
-   ========================= */
+/*small tablet*/
 @media (max-width: 768px) {
     .parent-section {
         padding: 70px 20px;
@@ -123,9 +96,7 @@
         gap: 20px;
     }
 }
-/* =========================
-   Mobile
-   ========================= */
+/*mobile*/
 @media (max-width: 576px) {
     .parent-section {
         padding: 60px 15px;
@@ -148,9 +119,7 @@
         font-size: 0.9rem;
     }
 }
-/* =========================
-   Very Small Mobile
-   ========================= */
+/*very small mobile*/
 @media (max-width: 380px) {
     .skills-grid {
         grid-template-columns: 1fr;

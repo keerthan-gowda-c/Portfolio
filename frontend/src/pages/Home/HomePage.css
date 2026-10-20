@@ -1,6 +1,4 @@
-/* =========================
-   Hero Section
-   ========================= */
+/*hero section*/
 .hero-section {
     min-height: 100vh;
     width: 100%;
@@ -10,9 +8,7 @@
     align-items: center;
     padding: 50px 20px;
 }
-/* =========================
-   Main Container
-   ========================= */
+/*main container*/
 .hero-container {
     width: 100%;
     max-width: 1200px;
@@ -21,9 +17,7 @@
     align-items: center;
     gap: 60px;
 }
-/* =========================
-   Image Section
-   ========================= */
+/*image section*/
 .hero-image {
     flex: 0 0 40%;
     display: flex;
@@ -35,16 +29,12 @@
     max-width: 380px;
     display: block;
     border-radius: 20px;
-    transition:
-        transform 0.4s ease,
-        box-shadow 0.4s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .profile-img:hover {
     transform: scale(1.03);
 }
-/* =========================
-   Content Section
-   ========================= */
+/*content section*/
 .hero-content {
     flex: 1;
     display: flex;
@@ -60,25 +50,19 @@
 }
 .name {
     color: var(--accent-color);
-    transition:
-        color 0.3s ease,
-        text-shadow 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 .name:hover {
     text-shadow: 0 3px 10px rgba(0, 198, 255, 0.6);
 }
-/* =========================
-   Subtitle
-   ========================= */
+/*subtitle*/
 .hero-subtitle {
     font-size: 1.2rem;
     color: var(--secondary-text);
     margin: 15px 0 0;
     line-height: 1.6;
 }
-/* =========================
-   Buttons
-   ========================= */
+/*buttons*/
 .hero-buttons {
     display: flex;
     align-items: center;
@@ -97,29 +81,20 @@
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease,
-        background-color 0.3s ease,
-        color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
-/* =========================
-   Project Button
-   ========================= */
+/*project button*/
 .project-btn {
     background-color: var(--accent-color);
     color: var(--bg-color);
 }
 .project-btn:hover {
     transform: translateY(-3px);
-    box-shadow:
-        0 8px 20px rgba(0, 198, 255, 0.35);
+    box-shadow: 0 8px 20px rgba(0, 198, 255, 0.35);
     color: var(--bg-color);
     background-color: var(--accent-blue);
 }
-/* =========================
-   Contact Button
-   ========================= */
+/*contact button*/
 .contact-btn {
     background: transparent;
     color: var(--text-color);
@@ -129,12 +104,9 @@
     transform: translateY(-3px);
     background-color: var(--text-color);
     color: var(--bg-color);
-    box-shadow:
-        0 8px 20px rgba(128, 128, 128, 0.2);
+    box-shadow: 0 8px 20px rgba(128, 128, 128, 0.2);
 }
-/* =========================
-   Tablet
-   ========================= */
+/*tablet*/
 @media (max-width: 900px) {
     .hero-container {
         gap: 40px;
@@ -146,9 +118,7 @@
         max-width: 320px;
     }
 }
-/* =========================
-   Mobile
-   ========================= */
+/*mobile*/
 @media (max-width: 768px) {
     .hero-section {
         min-height: auto;
@@ -183,9 +153,7 @@
         margin-top: 25px;
     }
 }
-/* =========================
-   Small Mobile
-   ========================= */
+/*small mobile*/
 @media (max-width: 480px) {
     .hero-section {
         padding: 60px 15px;

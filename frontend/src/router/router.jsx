@@ -6,6 +6,7 @@ import App from '../App';
 import SkillPage from '../pages/Skills/SkillPage';
 import ContactPage from '../pages/ContactPage/ContactPage';
 import WorkExperience from '../pages/WorkExperience/WorkExperience';
+import CertificatePage from '../pages/Certifications/CertificatePage';
 const my_router = createBrowserRouter(
     [
         {
@@ -34,6 +35,10 @@ const my_router = createBrowserRouter(
                 {
                     path:'/Contact',
                     element:<ContactPage/>
+                },
+                {
+                    path:'/Certificates',
+                    element:<CertificatePage/>
                 }
             ]
         }

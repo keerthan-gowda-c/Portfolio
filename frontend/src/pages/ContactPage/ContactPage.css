@@ -1,31 +1,23 @@
-/* =========================
-   Contact Section
-   ========================= */
+/*contact section*/
 .contact-section {
     width: 100%;
     min-height: 100vh;
     padding: 60px 20px;
     color: var(--text-color);
 }
-/* =========================
-   Container
-   ========================= */
+/*container*/
 .contact-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }
-/* =========================
-   Main Content
-   ========================= */
+/*main content*/
 .contact-content {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     gap: 70px;
 }
-/* =========================
-   Left Side
-   ========================= */
+/*left side*/
 .contact-info-section {
     width: 100%;
 }
@@ -42,9 +34,7 @@
     color: var(--secondary-text);
     line-height: 1.7;
 }
-/* =========================
-   Contact Information
-   ========================= */
+/*contact information*/
 .contact-info {
     margin-top: 30px;
 }
@@ -61,9 +51,7 @@
 .contact-info a:hover {
     color: var(--accent-color);
 }
-/* =========================
-   Form
-   ========================= */
+/*form*/
 .contact-form-section {
     width: 100%;
 }
@@ -74,12 +62,9 @@
     border: 1px solid var(--border-color);
     border-radius: 15px;
     backdrop-filter: blur(10px);
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-/* =========================
-   Form Group
-   ========================= */
+/*form group*/
 .form-group {
     margin-bottom: 20px;
 }
@@ -89,9 +74,7 @@
     color: var(--secondary-text);
     font-size: 0.95rem;
 }
-/* =========================
-   Inputs
-   ========================= */
+/*inputs*/
 .form-group input,
 .form-group textarea {
     width: 100%;
@@ -103,68 +86,52 @@
     color: var(--text-color);
     font-family: inherit;
     font-size: 1rem;
-    transition:
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
-/* Placeholder */
+/*placeholder*/
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: var(--secondary-text);
 }
-/* Focus */
+/*input focus*/
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--accent-color);
-    box-shadow:
-        0 0 8px rgba(0, 198, 255, 0.15);
+    box-shadow: 0 0 8px rgba(0, 198, 255, 0.15);
 }
-/* Textarea */
+/*textarea*/
 .form-group textarea {
     min-height: 120px;
     resize: vertical;
 }
-/* =========================
-   Send Button
-   ========================= */
+/*send button*/
 .send-button {
     width: 100%;
     padding: 12px;
     border: none;
     border-radius: 30px;
-    background: linear-gradient(
-        90deg,
-        var(--accent-color),
-        var(--accent-blue)
-    );
+    background: linear-gradient(90deg, var(--accent-color), var(--accent-blue));
     color: #fff;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .send-button:hover {
     transform: translateY(-3px);
-    box-shadow:
-        0 8px 20px rgba(0, 198, 255, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 198, 255, 0.3);
 }
 .send-button:active {
     transform: translateY(0);
 }
-/* =========================
-   Status
-   ========================= */
+/*form status*/
 .form-status {
     margin: 15px 0 0;
     text-align: center;
     color: var(--secondary-text);
     font-size: 0.95rem;
 }
-/* =========================
-   Tablet
-   ========================= */
+/*tablet*/
 @media (max-width: 900px) {
     .contact-content {
         grid-template-columns: 1fr 1fr;
@@ -174,9 +141,7 @@
         font-size: 2.2rem;
     }
 }
-/* =========================
-   Mobile
-   ========================= */
+/*mobile*/
 @media (max-width: 768px) {
     .contact-section {
         min-height: auto;
@@ -200,9 +165,7 @@
         padding: 25px;
     }
 }
-/* =========================
-   Small Mobile
-   ========================= */
+/*small mobile*/
 @media (max-width: 480px) {
     .contact-section {
         padding: 60px 15px;

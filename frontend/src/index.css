@@ -8,13 +8,17 @@
     --accent-blue: #0072ff;
     --border-color: rgba(255, 255, 255, 0.1);
     --card-bg: rgba(255, 255, 255, 0.05);
-    /* Dark theme — deepen the same hues */
     --card-gradient: linear-gradient(130deg, #baaffe, #b6faef, #c8efff, #b4d8e7);
     --card-content-h5: #141313;
     --card-content-p: #000000;
     --card-links: #000;
     --card-links-hover: #ffffff;
+    --certificate-card-bg: #1e293b;
+    --certificate-border: #334155;
+    --certificate-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    --certificate-shadow-hover: 0 14px 30px rgba(0, 0, 0, 0.4);
 }
+
 .light-mode {
     --bg-color: #ffffff;
     --text-color: #0f172a;
@@ -25,19 +29,25 @@
     --accent-blue: #0056cc;
     --border-color: rgba(15, 23, 42, 0.1);
     --card-bg: rgba(15, 23, 42, 0.03);
-    /* Light theme */
     --card-gradient: linear-gradient(130deg, #f4e6ff, #fdfcee, #e5f9ff, #d8e5ea);
     --card-content-h5: #0f172a;
     --card-content-p: #000000;
     --card-links: #0056cc;
     --card-links-border: #a9d0ff;
+    --certificate-card-bg: #ffffff;
+    --certificate-border: #e2e8f0;
+    --certificate-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+    --certificate-shadow-hover: 0 14px 30px rgba(15, 23, 42, 0.16);
 }
+
 * {
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -46,6 +56,7 @@ body {
     font-family: 'Poppins', sans-serif;
     cursor: default;
 }
+
 .app {
     min-height: 100vh;
     background: var(--bg-color);
