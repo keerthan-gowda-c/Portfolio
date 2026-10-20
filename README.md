@@ -56,6 +56,9 @@ Information about my background, education, development journey, and career inte
 ### 🛠️ Skills
 A showcase of my technical skills and the technologies I work with.
 
+### 📜 Certifications 
+A showcase of my certifications and professional training that highlight my technical knowledge and skills.
+
 ### 💼 Experience
 Details about my professional experience, including my current internship as a Junior Software Intern.
 
