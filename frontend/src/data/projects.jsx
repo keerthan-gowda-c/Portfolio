@@ -8,28 +8,28 @@ export const projects_list = [
         a recruiter dashboard with hiring metrics, search and filtering, and database 
         schema migrations managed with Alembic.`,
         github_link: 'https://github.com/keerthan-gowda-c/Fastapi_Job_portal',
-        live:'https://jobhive-job-portal.vercel.app/'
+        live: 'https://jobhive-job-portal.vercel.app/'
 
     },
     {
         id: 2,
+        title: 'Biryani Website',
+        year: 'May 2025',
+        description: `Developed a responsive biryani restaurant website using React.js
+        to showcase modern frontend development, component-based architecture, and 
+        intuitive user interface design.`,
+        github_link: 'https://github.com/keerthan-gowda-c/Biryani-website-frontend',
+        live: 'https://biryani-website-frontend.vercel.app/'
+    },
+    {
+        id: 3,
         title: 'TurboToys Garage',
         year: 'March 2026 - Apr 2026',
         description: `Supported an e-commerce platform with product, cart, and order workflows, 
         implemented secure authentication with role-based access control and full CRUD 
         functionality, and delivered a responsive, intuitive user experience across devices.`,
         github_link: 'https://github.com/keerthan-gowda-c/E-Com-Website.git',
-        live:'https://e-comm-website-sgn4.onrender.com/'
-    },
-    {
-        id: 3,
-        title: 'Biryani Website',
-        year: 'January 2025',
-        description: `Developed a responsive biryani restaurant website using React.js
-        to showcase modern frontend development, component-based architecture, and 
-        intuitive user interface design.`,
-        github_link: 'https://github.com/keerthan-gowda-c/Biryani-website-frontend',
-        live:'https://react-e-commerce2.vercel.app/'
+        live: 'https://e-comm-website-sgn4.onrender.com/'
     },
 ]
 
