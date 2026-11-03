@@ -1,195 +1,381 @@
+
+/* ==============================
+   ABOUT SECTION
+============================== */
+
 .about-section {
     width: 100%;
-    min-height: 100vh;
-    background: transparent;
-    color: var(--text-color);
-    padding: 30px 20px;
+    padding: 35px 0;
 }
-   /* Container */
+
 .about-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
 }
-   /* Main Content */
+
+/* ==============================
+   SECTION HEADING
+============================== */
+
+.about-heading {
+    margin-bottom: 38px;
+}
+
+.section-eyebrow {
+    display: inline-block;
+    color: var(--accent-color);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    margin: 9px 0 8px;
+    color: var(--text-color);
+    font-size: clamp(32px, 4vw, 43px);
+    font-weight: 750;
+    letter-spacing: -1.5px;
+}
+
+.section-title span {
+    color: var(--accent-color);
+}
+
+.about-heading-text {
+    margin: 0;
+    color: var(--secondary-text);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ==============================
+   MAIN CONTENT
+============================== */
+
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 70px;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: start;
+    gap: clamp(35px, 5vw, 70px);
 }
-   /* Left Side */
+
+/* ==============================
+   LEFT SIDE
+============================== */
+
 .about-info {
     width: 100%;
 }
-.section-title {
-    font-size: 2.5rem;
-    font-weight: 700;
+
+.about-intro-title {
+    max-width: 520px;
     margin: 0 0 20px;
     color: var(--text-color);
+    font-size: clamp(24px, 3vw, 30px);
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.7px;
 }
-.about-text {
-    color: var(--secondary-text);
-    line-height: 1.7;
-    margin: 0 0 15px;
-}
-.about-text b {
-    color: var(--text-color);
-}
+
+.about-text,
 .about-subtext {
+    margin: 0 0 15px;
     color: var(--secondary-text);
-    line-height: 1.7;
-    margin: 10px 0 0;
+    font-size: 14px;
+    line-height: 1.9;
 }
-/* Role */
-.role {
+
+.about-text strong {
+    color: var(--text-color);
+    font-weight: 650;
+}
+
+/* Current Role */
+
+.about-current-role {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 25px 0;
+    padding: 17px;
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    background: var(--surface-color);
+}
+
+.role-icon {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: var(--active-nav-bg);
     color: var(--accent-color);
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin: 25px 0 0;
+    font-size: 20px;
 }
-/* Resume button */
+
+.role-label {
+    color: var(--muted-text);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.about-current-role h4 {
+    margin: 4px 0;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.about-current-role p {
+    margin: 0;
+    color: var(--secondary-text);
+    font-size: 12px;
+}
+
+/* Resume Button */
+
 .resume-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-top: 25px;
-    padding: 11px 25px;
-    background: linear-gradient(
-        90deg,
-        var(--accent-color),
-        var(--accent-blue)
-    );
-    color: #fff;
-    border: none;
-    border-radius: 30px;
+    gap: 10px;
+    margin-top: 12px;
+    padding: 12px 20px;
+    border: 1px solid var(--accent-color);
+    border-radius: 7px;
+    background: var(--accent-color);
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 650;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
+    transition: all 0.25s ease;
 }
+
 .resume-btn:hover {
     transform: translateY(-3px);
-    box-shadow:
-        0 8px 20px rgba(0, 198, 255, 0.35);
+    box-shadow: 0 8px 22px var(--accent-shadow);
+    color: #ffffff;
 }
-   /* Right Side */
+
+/* ==============================
+   RIGHT SIDE
+============================== */
+
 .about-bio {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-width: 0;
 }
-   /* Bio Card */
+
 .bio-card {
-    width: 100%;
+    padding: 26px;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
     background: var(--card-bg);
-    padding: 30px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow: var(--card-shadow);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
 }
+
 .bio-card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(0, 198, 255, 0.3);
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.2);
+    border-color: var(--accent-border);
+    box-shadow: var(--card-shadow-hover);
 }
-/*Bio Grid*/
+
+/* Card Heading */
+
+.bio-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--divider-color);
+}
+
+.bio-card-heading h3 {
+    margin: 7px 0 0;
+    color: var(--text-color);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.bio-card-heading > i {
+    color: var(--accent-color);
+    font-size: 25px;
+}
+
+/* Bio Grid */
+
 .bio-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 23px 20px;
 }
-.bio-column {
+
+.bio-item {
     min-width: 0;
 }
-/*Bio Text */
-.bio-card p {
-    margin: 0 0 18px;
-    color: var(--text-color);
-    line-height: 1.6;
-    word-break: break-word;
+
+.bio-item-full {
+    grid-column: 1 / -1;
 }
-.bio-card p:last-child {
-    margin-bottom: 0;
-}
-.bio-card span {
+
+.bio-label {
     display: block;
-    color: var(--accent-color);
-    font-weight: 600;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
+    color: var(--muted-text);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
 }
-.bio-card a {
+
+.bio-item p {
+    margin: 0;
     color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 13px;
+    font-weight: 550;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
 }
-.bio-card a:hover {
+
+.bio-item a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 550;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.25s ease;
+}
+
+.bio-item a i {
+    flex-shrink: 0;
+    color: var(--accent-color);
+    font-size: 12px;
+}
+
+.bio-item a:hover {
     color: var(--accent-color);
 }
-/* Tablet */
+
+/* Focus Card */
+
+.about-focus-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 19px;
+    border: 1px solid var(--accent-border);
+    border-radius: 10px;
+    background: var(--active-nav-bg);
+}
+
+.about-focus-card > i {
+    flex-shrink: 0;
+    color: var(--accent-color);
+    font-size: 24px;
+}
+
+.about-focus-card h4 {
+    margin: 0 0 5px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 650;
+}
+
+.about-focus-card p {
+    margin: 0;
+    color: var(--secondary-text);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
 @media (max-width: 900px) {
     .about-content {
-        gap: 40px;
-    }
-    .section-title {
-        font-size: 2.2rem;
-    }
-    .bio-card {
-        padding: 25px;
-    }
-}
-/* Mobile*/
-@media (max-width: 768px) {
-    .about-section {
-        min-height: auto;
-        padding: 70px 20px;
-    }
-    .about-content {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 35px;
     }
+
     .about-info {
-        text-align: center;
+        max-width: 750px;
     }
-    .section-title {
-        font-size: 2rem;
-    }
+
     .about-bio {
-        width: 100%;
-    }
-    .bio-card {
-        padding: 25px;
+        max-width: 750px;
     }
 }
-/* =========================
-   Small Mobile
-   ========================= */
-@media (max-width: 480px) {
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media (max-width: 576px) {
     .about-section {
-        padding: 60px 15px;
+        padding: 45px 0;
     }
+
+    .about-heading {
+        margin-bottom: 28px;
+    }
+
     .section-title {
-        font-size: 1.8rem;
+        font-size: 32px;
     }
+
+    .about-intro-title {
+        font-size: 24px;
+    }
+
     .about-text,
     .about-subtext {
-        font-size: 0.95rem;
+        font-size: 13px;
     }
+
+    .about-current-role {
+        padding: 14px;
+    }
+
+    .bio-card {
+        padding: 19px;
+    }
+
     .bio-grid {
-        grid-template-columns: 1fr;
-        gap: 0;
+        gap: 19px 12px;
     }
-    .bio-column + .bio-column {
-        margin-top: 18px;
+
+    .bio-item p,
+    .bio-item a {
+        font-size: 12px;
     }
+
+    .about-focus-card {
+        padding: 15px;
+    }
+
     .resume-btn {
         width: 100%;
-        max-width: 250px;
+    }
+}
+
+@media (max-width: 380px) {
+    .bio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-item-full {
+        grid-column: auto;
     }
 }

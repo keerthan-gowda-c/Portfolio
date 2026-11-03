@@ -1,101 +1,47 @@
+
 import './header.css';
-import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
 
-export default function Header({ lightMode, toggleTheme }) {
-  const [menuOpen, setMenuOpen] = useState(false);
+export default function Header({
+    lightMode,
+    toggleTheme,
+    navigateTo
+}) {
+    return (
+        <header className="top-header">
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+            <div className="top-header-inner">
 
-  return (
-    <nav className="navigation">
-      <div className="navbar-container">
-
-        {/* Logo */}
-        <NavLink to="/" className="navbar-brand" onClick={closeMenu}>
-          <h5>
-            Keerthan
-          </h5>
-        </NavLink>
-
-
-
-        {/* Hamburger */}
-        <button
-          className={`menu-toggle ${menuOpen ? 'open' : ''}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle navigation"
-          aria-expanded={menuOpen}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        {/* Navigation Links */}
-        <div className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
-          <ul>
-            <li>
-              <div className="theme-toggle-wrapper">
                 <button
-                  className={`theme-toggle ${lightMode ? "light" : "dark"}`}
-                  onClick={toggleTheme}
-                  aria-label="Toggle Theme"
+                    className="header-brand"
+                    onClick={() => navigateTo('home')}
                 >
-                  <span className="toggle-icon">
-                    {lightMode ? "☀️" : "🌙"}
-                  </span>
+                    Keerthan<span>.</span>
                 </button>
-              </div>
-            </li>
 
-            <li>
-              <NavLink to="/" end onClick={closeMenu}>
-                Home
-              </NavLink>
-            </li>
+                <div className="header-actions">
 
-            <li>
-              <NavLink to="/About" onClick={closeMenu}>
-                About
-              </NavLink>
-            </li>
+                    <button
+                        className="header-theme"
+                        onClick={toggleTheme}
+                        aria-label="Toggle theme"
+                        title={lightMode ? 'Switch to dark mode' : 'Switch to light mode'}
+                    >
+                        <i className={`bi ${lightMode ? 'bi-moon-stars' : 'bi-sun'}`}></i>
+                    </button>
 
-            <li>
-              <NavLink to="/Skills" onClick={closeMenu}>
-                Skills
-              </NavLink>
-            </li>
+                    <button
+                        className="hire-button"
+                        // onClick={() => navigateTo('contact')}
 
-            <li>
-              <NavLink to="/Certificates" onClick={closeMenu}>
-                Certificates
-              </NavLink>
-            </li>
+                    >
+                        <a href="mailto:ckgowda9741@gmail.com">Hire Me</a>
+                        <i className="bi bi-arrow-up-right"></i>
+                    </button>
 
-            <li>
-              <NavLink to="/Work-Experience" onClick={closeMenu}>
-                Experience
-              </NavLink>
-            </li>
+                </div>
 
-            <li>
-              <NavLink to="/Projects" onClick={closeMenu}>
-                Projects
-              </NavLink>
-            </li>
+            </div>
 
-            <li>
-              <NavLink to="/Contact" onClick={closeMenu}>
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-    </nav>
-  );
+        </header>
+    );
 }

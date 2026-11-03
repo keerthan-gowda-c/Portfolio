@@ -1,49 +1,52 @@
+
 import "./WorkExperience.css";
 
 export default function ExperienceCard({ experiences }) {
+    const responsibilities = experiences.responsibilities || [];
+
+    //  const responsibilities = experiences.responsibilities?.[0]
+    //     ? Object.values(experiences.responsibilities[0])
+    //     : [];
     return (
-        <div className="experience-card">
+        <article className="experience-card">
 
             <div className="experience-header">
 
-                <div className="experience-role">
+                <div className="experience-company-icon">
+                    <i className="bi bi-building"></i>
+                </div>
 
-                    <div className="left-header">
+                <div className="experience-main-info">
 
-                        <span className="office-logo">
-                            🏢
-                        </span>
+                    <div className="experience-role-row">
 
-                        <h5 className="role-name">
-                            {experiences.role}
+                        <div>
+                            <h3 className="role-name">
+                                {experiences.role}
+                            </h3>
 
-                            <span className="experience-company">
+                            <p className="experience-company">
                                 {experiences.company_name}
-                            </span>
-                        </h5>
+                            </p>
+                        </div>
 
-                        <div className="dot"></div>
+                        {experiences.currently_working && (
+                            <span className="experience-status">
+                                <span className="status-dot"></span>
+                                Present
+                            </span>
+                        )}
 
                     </div>
 
-                    <div className="right-header">
+                    <div className="experience-duration">
+                        <i className="bi bi-calendar3"></i>
 
-                        <div className="experience-duration">
-
-                            <span>
-                                {experiences.from_date}
-                            </span>
-
-                            <span className="duration-separator">
-                                -
-                            </span>
-
-                            <span>
-                                Present
-                            </span>
-
-                        </div>
-
+                        {experiences.from_date} – {
+                            experiences.currently_working
+                                ? "Present"
+                                : experiences.end_date
+                        }
                     </div>
 
                 </div>
@@ -52,22 +55,18 @@ export default function ExperienceCard({ experiences }) {
 
             <div className="experience-responsibility">
 
-                <h6 className="responsibility-header">
-                    Responsibilities
-                </h6>
+                <h4 className="responsibility-header">
+                    Key Responsibilities
+                </h4>
 
                 <ul>
-                    {Object.values(
-                        experiences.responsibilities[0]
-                    ).map((value, index) => (
-                        <li key={index}>
-                            {value}
-                        </li>
+                    {responsibilities.map((value, index) => (
+                        <li key={index}>{value}</li>
                     ))}
                 </ul>
 
             </div>
 
-        </div>
+        </article>
     );
 }
