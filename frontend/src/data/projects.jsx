@@ -17,7 +17,7 @@ export const projects_list = [
         ],
         github_link:
             "https://github.com/keerthan-gowda-c/Fastapi_Job_portal",
-        live: "https://jobhive-job-portal.vercel.app/",
+        live: "https://jobhive-jobportal.vercel.app/",
     },
     {
         id: 2,
