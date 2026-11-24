@@ -41,12 +41,8 @@ export default function ProjectPage() {
 
                 <div className="project-list">
 
-                    {projects_list.map((project, index) => (
-                        <ProjectCard
-                            key={project.title || index}
-                            projects={project}
-                            index={index}
-                        />
+                    {[...projects_list].sort((a, b) => b.id - a.id).map((project, index) => (
+                        <ProjectCard key={project.title || index} projects={project} index={index} />
                     ))}
 
                 </div>

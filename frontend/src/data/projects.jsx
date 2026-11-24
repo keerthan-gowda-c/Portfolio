@@ -1,23 +1,20 @@
-
 export const projects_list = [
     {
         id: 1,
-        title: "Job Portal",
-        year: "June 2026 – July 2026",
+        title: "TurboToys Garage",
+        year: "March 2026 – April 2026",
         description:
-            "Developed a full-stack job portal using React, FastAPI, SQLAlchemy and PostgreSQL. Implemented REST APIs for job, application and company management, recruiter dashboards, job search and filtering, JWT authentication, and database migrations using Alembic.",
+            "Worked on an e-commerce application with product, cart and order workflows. Implemented authentication, role-based access control and CRUD functionality, with a responsive interface for different screen sizes.",
         technologies: [
             "Python",
-            "FastAPI",
+            "Django",
             "React",
-            "PostgreSQL",
-            "SQLAlchemy",
-            "Alembic",
-            "JWT",
+            "JavaScript",
+            "SQL",
         ],
         github_link:
-            "https://github.com/keerthan-gowda-c/Fastapi_Job_portal",
-        live: "https://jobhive-jobportal.vercel.app/",
+            "https://github.com/keerthan-gowda-c/E-Com-Website.git",
+        live: "https://e-comm-website-sgn4.onrender.com/",
     },
     {
         id: 2,
@@ -38,19 +35,21 @@ export const projects_list = [
     },
     {
         id: 3,
-        title: "TurboToys Garage",
-        year: "March 2026 – April 2026",
+        title: "Job Portal",
+        year: "June 2026 – July 2026",
         description:
-            "Worked on an e-commerce application with product, cart and order workflows. Implemented authentication, role-based access control and CRUD functionality, with a responsive interface for different screen sizes.",
+            "Developed a full-stack job portal using React, FastAPI, SQLAlchemy and PostgreSQL. Implemented REST APIs for job, application and company management, recruiter dashboards, job search and filtering, JWT authentication, and database migrations using Alembic.",
         technologies: [
             "Python",
-            "Django",
+            "FastAPI",
             "React",
-            "JavaScript",
-            "SQL",
+            "PostgreSQL",
+            "SQLAlchemy",
+            "Alembic",
+            "JWT",
         ],
         github_link:
-            "https://github.com/keerthan-gowda-c/E-Com-Website.git",
-        live: "https://e-comm-website-sgn4.onrender.com/",
+            "https://github.com/keerthan-gowda-c/Fastapi_Job_portal",
+        live: "https://jobhive-jobportal.vercel.app/",
     },
 ];

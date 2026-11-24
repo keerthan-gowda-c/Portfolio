@@ -28,11 +28,9 @@ export default function WorkExperience() {
                 </div>
 
                 <div className="experience-list">
-                    {experience.map((experiences) => (
-                        <ExperienceCard
-                            key={experiences.id}
-                            experiences={experiences}
-                        />
+
+                    {[...experience].sort((a, b) => b.id - a.id).map((experience) => (
+                        <ExperienceCard key={experience.id} experiences={experience} />
                     ))}
                 </div>
 

@@ -35,11 +35,8 @@ export default function CertificatePage() {
 
                 <div className="certificates-grid">
 
-                    {certificates_list.map((certificate, index) => (
-                        <CertificateCard
-                            key={certificate.title || index}
-                            certificates={certificate}
-                        />
+                    {[...certificates_list].sort((a, b) => b.id - a.id).map((certificate, index) => (
+                        <CertificateCard key={certificate.title || index} certificates={certificate} index={index} />
                     ))}
 
                 </div>

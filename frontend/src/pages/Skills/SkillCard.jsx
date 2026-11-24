@@ -1,7 +1,7 @@
 
 import "./SkillPage.css";
 
-const Skills = ({ skills }) => {
+const SkillCard = ({ skills }) => {
     return (
         <article className="skill-card">
 
@@ -22,4 +22,4 @@ const Skills = ({ skills }) => {
     );
 };
 
-export default Skills;
+export default SkillCard;

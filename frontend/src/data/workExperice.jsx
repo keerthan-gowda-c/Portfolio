@@ -5,8 +5,8 @@ export const experience = [
         role: "Junior Software Intern",
         company_name: "Chervic Advisory Services",
         from_date: "Aug 2026",
-        end_date: null,
-        currently_working: true,
+        currently_working: false,
+        end_date: "Nov 2026",
         responsibilities: [
             "Designed and developed responsive web pages using React, JavaScript, HTML and CSS as part of real-world projects.",
             "Debugged and resolved code issues by analyzing existing implementations and improving functionality.",
@@ -14,4 +14,6 @@ export const experience = [
             "Contributed to frontend features and API integration while gaining practical experience in team-based software development.",
         ],
     },
+    
+
 ];
